@@ -181,6 +181,9 @@
                   <button class="open-project-btn" data-project="padu-padan">
                     <span>🔍 Project Case Study</span>
                   </button>
+                  <a href="https://github.com/alyakhairunnisa1303/wardobe" target="_blank" rel="noopener noreferrer" class="btn-repo" title="View Source on GitHub">
+                    <span>🐙 GitHub</span>
+                  </a>
                 </div>
               </div>
             </div>

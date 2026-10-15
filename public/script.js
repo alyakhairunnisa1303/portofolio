@@ -569,6 +569,8 @@ const projectDatabase = {
         <li>Build a complete look and review the selected outfit in a summary.</li>
         <li>Choose an occasion and save favorite outfit combinations.</li>
       </ul>
+
+      <p style="margin-top: 14px;"><a href="https://github.com/alyakhairunnisa1303/wardobe" target="_blank" rel="noopener noreferrer" style="color: var(--pink-deep); font-weight: 700; text-decoration: underline;">➔ View GitHub Repository (alyakhairunnisa1303/wardobe)</a></p>
     `
   }
 };
