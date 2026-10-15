@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="485" height="1080" viewBox="0 0 485 1080" role="img" aria-labelledby="title description">
+  <title id="title">VocaLearn anonymized demo preview</title>
+  <desc id="description">Illustrative student dashboard with synthetic profile and progress data.</desc>
+  <rect width="485" height="1080" fill="#fbf7ec"/>
+  <rect x="0" y="0" width="485" height="54" fill="#fffaf0"/>
+  <text x="28" y="35" fill="#34443c" font-family="Arial, sans-serif" font-size="16" font-weight="700">9:41  ◉  ▰  ▴  ▾</text>
+
+  <text x="28" y="91" fill="#879087" font-family="Arial, sans-serif" font-size="12" letter-spacing="1.5">HALO, AKUN DEMO</text>
+  <text x="28" y="128" fill="#34443c" font-family="Arial, sans-serif" font-size="25" font-weight="700">Siswa Vokasi 👋</text>
+  <text x="28" y="158" fill="#58645a" font-family="Arial, sans-serif" font-size="14">Profil dan progres simulasi</text>
+  <circle cx="431" cy="112" r="25" fill="#9ab39a"/>
+  <text x="423" y="119" fill="#fff" font-family="Arial, sans-serif" font-size="19" font-weight="700">D</text>
+
+  <rect x="28" y="191" width="429" height="105" rx="24" fill="#1c4145"/>
+  <circle cx="59" cy="220" r="10" fill="none" stroke="#fff" stroke-width="2"/>
+  <text x="55" y="225" fill="#fff" font-family="Arial, sans-serif" font-size="14" font-weight="700">i</text>
+  <text x="85" y="224" fill="#fff" font-family="Arial, sans-serif" font-size="14" font-weight="700">Peta kompetensi demo</text>
+  <text x="85" y="250" fill="#e3ece4" font-family="Arial, sans-serif" font-size="12">Contoh tampilan dengan data simulasi.</text>
+  <text x="85" y="271" fill="#e3ece4" font-family="Arial, sans-serif" font-size="12">Tidak memuat informasi siswa sebenarnya.</text>
+
+  <text x="28" y="337" fill="#34443c" font-family="Arial, sans-serif" font-size="16" font-weight="700">Peta Kompetensi</text>
+
+  <g font-family="Arial, sans-serif">
+    <rect x="28" y="357" width="429" height="80" rx="22" fill="#fff"/>
+    <text x="48" y="389" fill="#34443c" font-size="13" font-weight="700">Logika Pemrograman</text>
+    <rect x="48" y="405" width="389" height="9" rx="5" fill="#f5f0e5"/>
+    <rect x="48" y="405" width="245" height="9" rx="5" fill="#d8a63d"/>
+    <rect x="28" y="449" width="429" height="80" rx="22" fill="#fff"/>
+    <text x="48" y="481" fill="#34443c" font-size="13" font-weight="700">Manajemen Basis Data</text>
+    <rect x="48" y="497" width="389" height="9" rx="5" fill="#f5f0e5"/>
+    <rect x="48" y="497" width="188" height="9" rx="5" fill="#d8a63d"/>
+    <rect x="28" y="541" width="429" height="80" rx="22" fill="#fff"/>
+    <text x="48" y="573" fill="#34443c" font-size="13" font-weight="700">Instalasi Jaringan LAN</text>
+    <rect x="48" y="589" width="389" height="9" rx="5" fill="#f5f0e5"/>
+    <rect x="48" y="589" width="294" height="9" rx="5" fill="#d8a63d"/>
+    <rect x="28" y="633" width="429" height="80" rx="22" fill="#fff"/>
+    <text x="48" y="665" fill="#34443c" font-size="13" font-weight="700">Pengembangan Aplikasi Web</text>
+    <rect x="48" y="681" width="389" height="9" rx="5" fill="#f5f0e5"/>
+    <rect x="48" y="681" width="220" height="9" rx="5" fill="#d8a63d"/>
+    <rect x="28" y="725" width="429" height="80" rx="22" fill="#fff"/>
+    <text x="48" y="757" fill="#34443c" font-size="13" font-weight="700">Administrasi Sistem</text>
+    <rect x="48" y="773" width="389" height="9" rx="5" fill="#f5f0e5"/>
+    <rect x="48" y="773" width="328" height="9" rx="5" fill="#d8a63d"/>
+  </g>
+
+  <rect x="28" y="835" width="429" height="170" rx="24" fill="#1c4145"/>
+  <text x="50" y="872" fill="#d5c687" font-family="Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="2">HASIL SIMULASI</text>
+  <text x="50" y="908" fill="#fff" font-family="Arial, sans-serif" font-size="17" font-weight="700">Contoh hasil diagnostik</text>
+  <text x="50" y="936" fill="#e3ece4" font-family="Arial, sans-serif" font-size="12">Progres ilustratif untuk keperluan preview.</text>
+  <text x="50" y="958" fill="#e3ece4" font-family="Arial, sans-serif" font-size="12">Tidak ada tanggal, nama, atau nilai siswa nyata.</text>
+  <rect x="50" y="975" width="202" height="40" rx="20" fill="#fff"/>
+  <text x="70" y="1000" fill="#34443c" font-family="Arial, sans-serif" font-size="12" font-weight="700">Lihat Contoh Hasil →</text>
+
+  <rect x="0" y="1018" width="485" height="62" fill="#fff"/>
+  <text x="49" y="1055" fill="#34443c" font-family="Arial, sans-serif" font-size="17">◆</text>
+  <text x="145" y="1055" fill="#9aa39a" font-family="Arial, sans-serif" font-size="17">▤</text>
+  <text x="241" y="1055" fill="#9aa39a" font-family="Arial, sans-serif" font-size="17">☷</text>
+  <text x="337" y="1055" fill="#9aa39a" font-family="Arial, sans-serif" font-size="17">▥</text>
+  <text x="433" y="1055" fill="#9aa39a" font-family="Arial, sans-serif" font-size="17">○</text>
+</svg>

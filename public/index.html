@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alya Khairunnisa ✦ Full-Stack Developer | Politeknik Negeri Padang</title>
+  <meta name="description" content="Portfolio of Alya Khairunnisa — Full-Stack Developer & D3 Information Technology student at Politeknik Negeri Padang (GPA 3.75). Experienced in Python (FastAPI), PHP (Laravel), React, and Flutter. 2nd Winner KMIPN Hackathon Challenge & Silver Medalist.">
+  <meta name="keywords" content="Alya Khairunnisa, Full-Stack Developer, Politeknik Negeri Padang, FastAPI, Flutter, Laravel, React, Python, KMIPN, Huawei Cloud, Red Hat, Padang">
+  <meta name="author" content="Alya Khairunnisa">
+  
+  <!-- OpenGraph / Social Meta Tags -->
+  <meta property="og:title" content="Alya Khairunnisa ✦ Full-Stack Developer Portfolio">
+  <meta property="og:description" content="Full-Stack Developer & D3 Information Technology student at Politeknik Negeri Padang (GPA 3.75). Builder of VocaLearn, KMIPN Silver Medalist.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Great+Vibes&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sacramento&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css?v=7">
+</head>
+<body>
+  <!-- Canvas for Sparkle Particle Trail -->
+  <canvas id="sparkle-canvas"></canvas>
+
+  <!-- Floating Audio & Mood Controls Bar -->
+  <header class="floating-nav-container">
+    <nav class="coquette-navbar" aria-label="Main Navigation">
+      <div class="nav-brand">
+        <span class="ribbon-icon">🎀</span>
+        <span class="brand-text">Alya Khairunnisa</span>
+        <span class="sparkle-badge">&lt;Full-Stack/&gt;</span>
+      </div>
+
+      <div class="nav-links">
+        <a href="#about" class="nav-pill active"><span class="pill-dot">🌸</span> About</a>
+        <a href="#skills" class="nav-pill"><span class="pill-dot">💻</span> Tech Stack</a>
+        <a href="#experiences" class="nav-pill"><span class="pill-dot">📖</span> Journey & Honors</a>
+        <a href="#projects" class="nav-pill"><span class="pill-dot">⚡</span> Projects</a>
+        <a href="#guestbook" class="nav-pill"><span class="pill-dot">💌</span> Guestbook</a>
+      </div>
+
+      <div class="nav-actions">
+        <!-- Sparkle Trail Toggle -->
+        <button type="button" id="sparkle-toggle-btn" class="widget-btn" title="Toggle Cursor Sparkles" aria-label="Toggle cursor sparkles" aria-pressed="true">
+          <span>✨</span>
+        </button>
+
+        <!-- Sound FX Toggle -->
+        <button type="button" id="sfx-toggle-btn" class="widget-btn" title="Sound Effects ON/OFF" aria-label="Toggle sound effects" aria-pressed="true">
+          <span id="sfx-icon">🔊</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Garden Balustrade Header Banner -->
+  <div class="balustrade-header" aria-hidden="true">
+    <div class="terrace-rail"></div>
+    <div class="ivy-overlay"></div>
+    <div class="soft-sunlight"></div>
+  </div>
+
+  <main class="scrapbook-main">
+<!-- SECTION 1: ABOUT / HERO ("Hallo!") -->
+    <section id="about" class="scrapbook-section section-about">
+      <div class="section-container about-grid">
+        
+        <!-- Left: Cameo Mirror Portrait Frame -->
+        <div class="cameo-col">
+          <div class="cameo-card-wrapper" id="cameo-wrapper">
+            <!-- Floating Decorative Stickers around Mirror -->
+            <div class="floating-decor star-top-left">✦</div>
+            <div class="floating-decor star-top-right">✧</div>
+            <div class="floating-decor flower-top">🌸</div>
+            <div class="floating-decor flower-bottom-left">🌺</div>
+            <div class="floating-decor flower-bottom-right">🌷</div>
+            <div class="floating-decor bow-accent">🎀</div>
+
+            <!-- The Ornate Rococo Frame -->
+            <div class="cameo-mirror-frame">
+              <div class="mirror-inner">
+                <img src="assets/images/alya_photo.jpeg" alt="Profile portrait of Alya Khairunnisa" class="cameo-img" id="cameo-img">
+                <div class="mirror-glass-sheen"></div>
+              </div>
+            </div>
+
+            <!-- Status pill below portrait -->
+            <div class="status-pill">
+              <span class="pulse-dot"></span>
+              <span>Open for Full-Stack Developer Roles 🚀</span>
+            </div>
+
+  
+          </div>
+        </div>
+
+        <!-- Right: "Hallo!" Letter & Biography -->
+        <div class="letter-col">
+          <div class="letter-paper">
+            <div class="washi-tape tape-top-right tape-green"></div>
+
+            <div class="greeting-header">
+              <h1 class="calligraphy-title">Hallo!</h1>
+              <span class="greeting-sparkle">✦</span>
+            </div>
+
+            <div class="bio-paragraphs">
+              <p class="lead-bio">
+                I'm <strong class="highlight-text">Alya Khairunnisa</strong>, a 
+                <span class="marker-highlight marker-yellow">Full-Stack Developer</span> and Information Technology Diploma (D3) student at 
+                <span class="marker-highlight marker-green">Politeknik Negeri Padang (GPA 3.75)</span> with hands-on experience building web and mobile applications using 
+                <span class="marker-highlight marker-pink">Python (FastAPI)</span>, 
+                <span class="marker-highlight marker-purple">PHP (Laravel)</span>, 
+                <span class="marker-highlight marker-yellow">JavaScript (React)</span>, and 
+                <span class="marker-highlight marker-green">Flutter</span>.
+              </p>
+
+            </div>
+
+            <!-- Education Card -->
+            <div class="education-badge">
+              <div class="edu-icon-box">🎓</div>
+              <div class="edu-info">
+                <div class="edu-title">Education</div>
+                <div class="edu-years">August 2024 - Present • <strong>GPA: 3.75</strong></div>
+                <div class="edu-major">Diploma (D3) in Information Technology • <strong>Politeknik Negeri Padang</strong></div>
+              </div>
+              <div class="edu-stamp">PNP IT '24 • 3.75</div>
+            </div>
+
+            <!-- Contact Strip matching CV -->
+            <div class="contact-pill-strip">
+              <!-- Location -->
+              <span class="contact-item" title="Location: Padang, West Sumatra">
+                <span class="contact-icon">📍</span>
+                <span class="contact-label">Padang, West Sumatra, Indonesia</span>
+              </span>
+
+              <!-- WhatsApp / Phone -->
+              <a href="https://wa.me/6281365004546" target="_blank" rel="noopener noreferrer" class="contact-item contact-wa" title="Chat on WhatsApp">
+                <span class="contact-icon">💬</span>
+                <span class="contact-label">081365004546</span>
+                <button class="copy-mini-btn" data-copy="081365004546" title="Copy phone number"></button>
+              </a>
+
+              <!-- Email -->
+              <a href="mailto:alyakhairunnisa9320@gmail.com" class="contact-item contact-mail" title="Send Email">
+                <span class="contact-icon">💌</span>
+                <span class="contact-label">alyakhairunnisa9320@gmail.com</span>
+                <button class="copy-mini-btn" data-copy="alyakhairunnisa9320@gmail.com" title="Copy email">📋</button>
+              </a>
+
+              <!-- LinkedIn -->
+              <a href="https://linkedin.com/in/alya-khairunnisa-004b18372" target="_blank" rel="noopener noreferrer" class="contact-item contact-in" title="Visit LinkedIn Profile">
+                <span class="contact-icon">💼</span>
+                <span class="contact-label">linkedin.com/in/alya-khairunnisa</span>
+              </a>
+
+              <!-- GitHub -->
+              <a href="https://github.com/alyakhairunnisa1303" target="_blank" rel="noopener noreferrer" class="contact-item contact-gh" title="Visit GitHub">
+                <span class="contact-icon">🐙</span>
+                <span class="contact-label">github.com/alyakhairunnisa1303</span>
+              </a>
+
+              <!-- CV -->
+              <a href="https://drive.google.com/file/d/1JAmog7lvPwC-MFr4Q_SP1DJKdvlirGJ9/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="contact-item contact-cv" title="Download CV">
+                <span class="contact-icon">📝</span>
+                <span class="contact-label">Download CV</span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION DIVIDER: Vintage Floral & Button Ribbon Border -->
+    <div class="tile-divider-band" aria-hidden="true">
+      <div class="tile-track">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+      </div>
+    </div>
+
+    <!-- SECTION 2: SOFTWARE & TECH STACK ("Software and Tech Stack") -->
+    <section id="skills" class="scrapbook-section section-skills wavy-bg">
+      <div class="section-container">
+        
+        <div class="skills-heading-wrap">
+          <div class="script-subtitle">Skills & Engineering Tools</div>
+          <h2 class="calligraphy-title-section">Software <span class="ampersand">&</span> Tech Stack</h2>
+          <p class="skills-hint">
+            <span class="hint-sparkle">✨</span> 
+            <strong>Interactive Dev Sticker Pack:</strong> Click to inspect tech details or <span class="highlight-drag">drag any sticker</span> freely on your screen!
+            <span class="hint-sparkle">✨</span>
+          </p>
+
+          <div class="sticker-controls">
+            <button id="btn-spill-stickers" class="cute-pill-btn btn-spill">
+              <span>💥</span> Spill All Stickers
+            </button>
+            <button id="btn-gather-stickers" class="cute-pill-btn btn-gather">
+              <span>✉️</span> Tuck Back Inside
+            </button>
+            <button id="btn-add-custom-sticker" class="cute-pill-btn btn-add">
+              <span>🎀</span> Stamp a Cute Dev Sticker
+            </button>
+          </div>
+        </div>
+
+        <!-- Interactive 3D Pink Envelope with Die-Cut Stickers -->
+        <div class="envelope-stage" id="envelope-stage">
+          
+          <!-- Decorative Lilies around envelope -->
+          <div class="envelope-flower flower-lily-left" aria-hidden="true">🌸</div>
+          <div class="envelope-flower flower-lily-right" aria-hidden="true">🌺</div>
+
+          <!-- The Physical 3D Envelope -->
+          <div class="envelope-body" id="envelope-body">
+            <div class="envelope-back"></div>
+            <div class="envelope-pocket">
+              <div class="wax-seal" id="wax-seal" title="Click to open or close envelope!">
+                <span>AK</span>
+              </div>
+            </div>
+            <div class="envelope-flap" id="envelope-flap"></div>
+          </div>
+
+          <!-- The Stickers Area (Scattered / Overflowing) -->
+          <div class="stickers-board" id="stickers-board">
+            
+            <!-- Frameworks & Core Web/Mobile Technologies -->
+            <div class="scrapbook-sticker sticker-app sticker-flutter" data-skill="Flutter (Mobile App)" data-desc="Cross-platform mobile development for Android & iOS, state management, custom widget architecture, and BKT integration in VocaLearn.">
+              <div class="sticker-gloss"></div>
+              <span class="sticker-badge-icon">📱</span>
+              <span class="sticker-text">Flutter</span>
+            </div>
+
+            <div class="scrapbook-sticker sticker-app sticker-fastapi" data-skill="FastAPI (Python)" data-desc="High-performance asynchronous Python REST APIs, Pydantic schemas, Swagger/OpenAPI interactive docs, and JWT token authentication.">
+              <div class="sticker-gloss"></div>
+              <span class="sticker-badge-icon">⚡</span>
+              <span class="sticker-text">FastAPI</span>
+            </div>
+
+            <div class="scrapbook-sticker sticker-app sticker-laravel" data-skill="Laravel (PHP)" data-desc="Modern PHP web framework, Eloquent ORM, MVC pattern, database migrations, middleware security, and RESTful service development.">
+              <div class="sticker-gloss"></div>
+              <span class="sticker-badge-icon">🔴</span>
+              <span class="sticker-text">Laravel</span>
+            </div>
+
+            <div class="scrapbook-sticker sticker-app sticker-react" data-skill="React.js" data-desc="Component-driven frontend web applications, reusable UI hooks, state management, responsive design, and seamless API integrations.">
+              <div class="sticker-gloss"></div>
+              <span class="sticker-badge-icon">⚛️</span>
+              <span class="sticker-text">React.js</span>
+            </div>
+
+            <!-- Programming Languages -->
+            <div class="scrapbook-sticker sticker-app sticker-python" data-skill="Python" data-desc="Backend API services, BKT algorithm implementations, AI model orchestration (OpenAI & Gemini), and automation scripts.">
+              <div class="sticker-gloss"></div>
+              <span class="sticker-badge-icon">🐍</span>
+              <span class="sticker-text">Python</span>
+            </div>
+
+            <div class="scrapbook-sticker sticker-app sticker-php" data-skill="PHP & PDO" data-desc="Web application engineering, procedural and object-oriented PHP, PDO prepared statements for SQL injection prevention.">
+              <div class="sticker-gloss"></div>
+              <span class="sticker-badge-icon">🐘</span>
+              <span class="sticker-text">PHP</span>
+            </div>
+
+            <div class="scrapbook-sticker sticker-app sticker-ts" data-skill="JavaScript (ES6+)" data-desc="Modern asynchronous JavaScript, Leaflet.js GIS spatial integration, DOM manipulations, and dynamic client-side interactions.">
+              <div class="sticker-gloss"></div>
+              <span class="sticker-badge-icon">✨</span>
+              <span class="sticker-text">JavaScript</span>
+            </div>
+
+            <div class="scrapbook-sticker sticker-app sticker-dart" data-skill="Dart Language" data-desc="Strongly typed language powering Flutter applications with asynchronous programming, streams, and null safety.">
+              <div class="sticker-gloss"></div>
+              <span class="sticker-badge-icon">🎯</span>
+              <span class="sticker-text">Dart</span>
+            </div>
+
+            <div class="scrapbook-sticker sticker-app sticker-java" data-skill="Java" data-desc="Object-oriented programming, data structures, backend engineering, and polytechnic software foundations.">
+              <div class="sticker-gloss"></div>
+              <span class="sticker-badge-icon">☕</span>
+              <span class="sticker-text">Java</span>
+            </div>
+
+            <div class="scrapbook-sticker sticker-app sticker-kotlin" data-skill="Kotlin" data-desc="Modern Android mobile development, concise null-safe syntax, coroutines, and JVM interoperability.">
+              <div class="sticker-gloss"></div>
+              <span class="sticker-badge-icon">🟣</span>
+              <span class="sticker-text">Kotlin</span>
+            </div>
+
+            <div class="scrapbook-sticker sticker-app sticker-cpp" data-skill="C++" data-desc="Algorithm design, competitive programming logic, memory management, and high-performance computing.">
+              <div class="sticker-gloss"></div>
+              <span class="sticker-badge-icon">⚙️</span>
+              <span class="sticker-text">C++</span>
+            </div>
+
+            <!-- Databases & DevOps -->
+            <div class="scrapbook-sticker sticker-app sticker-mysql" data-skill="MySQL Database" data-desc="Relational database schema modeling, indexing, query optimization, foreign key constraints, and transactional consistency.">
+              <div class="sticker-gloss"></div>
+              <span class="sticker-badge-icon">🐬</span>
+              <span class="sticker-text">MySQL</span>
+            </div>
+
+            <div class="scrapbook-sticker sticker-app sticker-docker" data-skill="Docker" data-desc="Containerizing FastAPI backend and database services to ensure reliable development, testing, and production parity.">
+              <div class="sticker-gloss"></div>
+              <span class="sticker-badge-icon">🐳</span>
+              <span class="sticker-text">Docker</span>
+            </div>
+
+            <div class="scrapbook-sticker sticker-app sticker-git" data-skill="Git & GitHub" data-desc="Semantic commit workflows, branch management, pull requests, and repository collaboration across polytechnic projects.">
+              <div class="sticker-gloss"></div>
+              <span class="sticker-badge-icon">🐙</span>
+              <span class="sticker-text">Git</span>
+            </div>
+
+            <div class="scrapbook-sticker sticker-app sticker-vscode" data-skill="VS Code" data-desc="Primary IDE configured for Python, PHP, Flutter, and JavaScript full-stack development with debugging extensions.">
+              <div class="sticker-gloss"></div>
+              <span class="sticker-badge-icon">💻</span>
+              <span class="sticker-text">VS Code</span>
+            </div>
+
+            <!-- Certified Cloud & Tools Badges -->
+            <div class="scrapbook-sticker sticker-app sticker-huawei" data-skill="Huawei Cloud (HCIA-Cloud)" data-desc="Certified in HCIA-Cloud Service V3.5 & V5.5: elastic compute, virtual private cloud (VPC), storage, and cloud architecture.">
+              <div class="sticker-gloss"></div>
+              <span class="sticker-badge-icon">☁️</span>
+              <span class="sticker-text">Huawei Cloud</span>
+            </div>
+
+            <div class="scrapbook-sticker sticker-app sticker-redhat" data-skill="Red Hat System Administration" data-desc="Certified Red Hat System Administration I (RH124) v8.2: Linux command line, systemctl services, permissions, and storage.">
+              <div class="sticker-gloss"></div>
+              <span class="sticker-badge-icon">🎩</span>
+              <span class="sticker-text">Red Hat</span>
+            </div>
+
+            <div class="scrapbook-sticker sticker-app sticker-laragon" data-skill="Laragon" data-desc="Isolated local development environment for PHP, Apache/Nginx, MySQL, and rapid full-stack web application testing.">
+              <div class="sticker-gloss"></div>
+              <span class="sticker-badge-icon">🐘</span>
+              <span class="sticker-text">Laragon</span>
+            </div>
+
+            <div class="scrapbook-sticker sticker-app sticker-figma" data-skill="Figma" data-desc="Interactive UI wireframing, component auto-layouts, mobile design systems, and rapid prototyping.">
+              <div class="sticker-gloss"></div>
+              <span class="sticker-badge-icon">🎨</span>
+              <span class="sticker-text">Figma</span>
+            </div>
+
+            <div class="scrapbook-sticker sticker-app sticker-android" data-skill="Android Studio" data-desc="Mobile development environment for Flutter builds, Android SDK management, emulator debugging, and APK bundling.">
+              <div class="sticker-gloss"></div>
+              <span class="sticker-badge-icon">🤖</span>
+              <span class="sticker-text">Android Studio</span>
+            </div>
+
+            <!-- Soft & Specialization Badges -->
+            <div class="scrapbook-sticker sticker-skill sticker-ai" data-skill="AI Integration (OpenAI & Gemini)" data-desc="Integrating generative AI APIs (OpenAI, Google Gemini) for adaptive educational recommendations and dynamic quizzes.">
+              <span class="sticker-pin">✨</span>
+              <span class="sticker-text">AI Integration</span>
+            </div>
+
+            <div class="scrapbook-sticker sticker-skill sticker-jwt" data-skill="REST APIs & JWT" data-desc="Designing token-based authentication pipelines, payload signing, token expiration, and role-based access control.">
+              <span class="sticker-text">JWT & REST APIs</span>
+            </div>
+
+            <div class="scrapbook-sticker sticker-skill sticker-leaflet" data-skill="Leaflet.js GIS" data-desc="Interactive GIS map visualization, coordinate plotting, distance calculations, and school location mapping for PPDB SD.">
+              <span class="sticker-text">Leaflet.js GIS</span>
+            </div>
+
+            <div class="scrapbook-sticker sticker-skill sticker-pytest" data-skill="pytest" data-desc="Writing automated unit tests, mocking database queries, and verifying API response schemas for FastAPI backends.">
+              <span class="sticker-text">pytest</span>
+            </div>
+
+            <div class="scrapbook-sticker sticker-skill sticker-cleancode" data-skill="Clean Code & Architecture" data-desc="Writing maintainable, scalable, and self-documenting code following SOLID and DRY principles.">
+              <span class="sticker-text">CLEAN CODE</span>
+            </div>
+
+            <div class="scrapbook-sticker sticker-skill sticker-problem-solver" data-skill="Full-Stack Engineering" data-desc="Bridging database schemas, backend logic, and intuitive mobile & web interfaces seamlessly.">
+              <span class="sticker-badge-star">⭐</span>
+              <span class="sticker-text">Full-Stack</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Active Skill Tooltip / Modal Box -->
+        <div class="skill-detail-bubble" id="skill-detail-bubble">
+          <div class="bubble-header">
+            <span class="bubble-tag">💻 Tech Highlight</span>
+            <span class="bubble-name" id="bubble-skill-name">Click any sticker!</span>
+          </div>
+          <p class="bubble-desc" id="bubble-skill-desc">Select or drag any sticker to explore Alya's technical tools, frameworks, and engineering methodologies.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION DIVIDER: Vintage Floral & Button Ribbon Border -->
+    <div class="tile-divider-band" aria-hidden="true">
+      <div class="tile-track">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+      </div>
+    </div>
+
+    <!-- SECTION 3: DIARY NOTEBOOK ("Experiences" & "Tech Publications") -->
+    <section id="experiences" class="scrapbook-section section-diary">
+      <div class="section-container">
+        
+        <div class="diary-section-header">
+          <div class="script-subtitle">Developer Log & Milestone Tracker</div>
+          <h2 class="calligraphy-title-section">The Engineering <span class="ampersand">&</span> Creative Log</h2>
+          <p class="diary-desc">Flip between software development roles, published tech writings, and coding notes.</p>
+        </div>
+
+        <!-- Interactive Realistic Notebook / Planner Binder -->
+        <div class="notebook-binder">
+          
+          <!-- Spiral Spine on Left / Top -->
+          <div class="spiral-spine" aria-hidden="true">
+            <span class="spiral-ring"></span>
+            <span class="spiral-ring"></span>
+            <span class="spiral-ring"></span>
+            <span class="spiral-ring"></span>
+            <span class="spiral-ring"></span>
+            <span class="spiral-ring"></span>
+            <span class="spiral-ring"></span>
+            <span class="spiral-ring"></span>
+            <span class="spiral-ring"></span>
+            <span class="spiral-ring"></span>
+          </div>
+
+          <!-- Planner Tabs Header -->
+          <div class="planner-tabs-bar">
+            <button class="planner-tab active" data-tab="tab-exp">
+              <span class="tab-emoji">💼</span> Experiences
+            </button>
+            <button class="planner-tab" data-tab="tab-pub" id="publications-tab-btn">
+              <span class="tab-emoji">✍️</span> Tech Notes & Papers
+            </button>
+            <button class="planner-tab" data-tab="tab-works">
+              <span class="tab-emoji">⚡</span> Code Showcase
+            </button>
+            <button class="planner-tab" data-tab="tab-notes">
+              <span class="tab-emoji">📌</span> Developer Notes
+            </button>
+          </div>
+
+          <!-- Open Book Pages (Gingham Pattern background) -->
+          <div class="notebook-pages gingham-bg">
+
+            <!-- TAB 1: EXPERIENCES (IT / SOFTWARE) -->
+            <div class="notebook-tab-content active" id="tab-exp">
+              <div class="diary-spread-grid">
+                
+                <!-- Left Diary Page: Project & Development Roles -->
+                <div class="diary-page page-left">
+                  <div class="page-title-stamp">
+                    <span class="script-heading">Tech Experience</span>
+                    <span class="washi-tape tape-pink tape-mini"></span>
+                  </div>
+
+                  <!-- Item 1: VocaLearn — Project Manager & Full-Stack Developer -->
+                  <div class="diary-entry-card entry-sdg">
+                    <div class="entry-header">
+                      <span class="entry-badge badge-green">🏆 KMIPN Award-Winning Project</span>
+                      <span class="entry-year">2025 - 2026</span>
+                    </div>
+                    <h3 class="entry-title">Project Manager & Full-Stack Developer</h3>
+                    <div class="entry-role">VocaLearn — AI-Powered Adaptive Learning Platform</div>
+                    <p class="entry-body">
+                      Led the development of VocaLearn as Project Manager while contributing to both <strong>backend (FastAPI REST APIs, JWT authentication, MySQL)</strong> and <strong>frontend (Flutter mobile app)</strong>. Integrated AI-powered recommendations using <strong>OpenAI & Google Gemini</strong> and BKT-based competency assessment.
+                    </p>
+                    <div class="entry-tags">
+                      <span>#Flutter</span>
+                      <span>#FastAPI</span>
+                      <span>#AI</span>
+                      <span>#ProjectManagement</span>
+                    </div>
+                  </div>
+
+                  <!-- Item 2: PPDB SD — Full-Stack Developer -->
+                  <div class="diary-entry-card entry-freelance">
+                    <div class="entry-header">
+                      <span class="entry-badge badge-purple">Full-Stack Web Application</span>
+                      <span class="entry-year">2025</span>
+                    </div>
+                    <h3 class="entry-title">Full-Stack Developer</h3>
+                    <div class="entry-role">Sistem Informasi PPDB Sekolah Dasar (Elementary School Admission System)</div>
+                    <p class="entry-body">
+                      Built a web-based PPDB system for online elementary school registration with <strong>PHP, MySQL, JavaScript</strong>. Integrated <strong>Leaflet.js GIS</strong> for interactive school location visualization to help parents find nearby schools.
+                    </p>
+                    <div class="entry-tags">
+                      <span>#PHP</span>
+                      <span>#MySQL</span>
+                      <span>#LeafletJS</span>
+                      <span>#GIS</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Right Diary Page: Developer & Leadership Roles -->
+                <div class="diary-page page-right">
+                  <div class="page-title-stamp">
+                    <span class="script-heading">Ventures & Roles</span>
+                    <span class="washi-tape tape-yellow tape-mini"></span>
+                  </div>
+
+                  <!-- Item 3: Peminjaman UKS — Developer -->
+                  <div class="diary-entry-card entry-business">
+                    <div class="entry-header">
+                      <span class="entry-badge badge-pink">Web Development</span>
+                      <span class="entry-year">2025</span>
+                    </div>
+                    <h3 class="entry-title">Developer</h3>
+                    <div class="entry-role">Peminjaman Fasilitas UKS (Facility Borrowing System)</div>
+                    <p class="entry-body">
+                      Built a web-based system to digitalize UKS equipment borrowing and management using <strong>PHP Native, MySQL, PDO</strong>. Implemented user authentication, facility inventory management, borrowing requests, document uploads, and <strong>SweetAlert2</strong> interactive feedback.
+                    </p>
+                    <div class="entry-tags">
+                      <span>#PHP</span>
+                      <span>#PDO</span>
+                      <span>#MySQL</span>
+                      <span>#SweetAlert2</span>
+                    </div>
+                  </div>
+
+                  <!-- Item 4: OSIS Coordinator -->
+                  <div class="diary-entry-card entry-business">
+                    <div class="entry-header">
+                      <span class="entry-badge badge-blue">Organizational Leadership</span>
+                      <span class="entry-year">2020 - 2022</span>
+                    </div>
+                    <h3 class="entry-title">Coordinator — Academic, Arts & Athletics</h3>
+                    <div class="entry-role">OSIS SMA Negeri 9 Padang</div>
+                    <p class="entry-body">
+                      Guided student development based on individual interests and talents. Coordinated programs supporting academic excellence and extracurricular achievements. Organized recurring school events including regular arts performances (pentas seni).
+                    </p>
+                    <div class="entry-tags">
+                      <span>#Leadership</span>
+                      <span>#EventManagement</span>
+                      <span>#StudentDevelopment</span>
+                    </div>
+                  </div>
+
+                  <!-- Decorative Hand Mirror in bottom corner -->
+                  <div class="diary-mirror-container" title="Alya's Hand Mirror 🌸">
+                    <span class="mirror-caption">Reflecting clean code daily 🪞</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- TAB 2: CERTIFICATIONS, HONORS & AWARDS -->
+            <div class="notebook-tab-content" id="tab-pub">
+              <div class="diary-spread-grid">
+                
+                <!-- Left: Honors & Awards -->
+                <div class="diary-page page-left">
+                  <div class="page-title-stamp">
+                    <span class="script-heading">Honors & Awards</span>
+                    <span class="washi-tape tape-green tape-mini"></span>
+                  </div>
+
+                  <div class="publication-paper-card">
+                    <div class="pub-type-tag">🏆 National Competition Achievement</div>
+                    <h3 class="pub-headline">
+                      2nd Winner — Hackathon Challenge & Silver Medalist at KMIPN Awards 2026
+                    </h3>
+                    <div class="pub-meta">
+                      <span>🏛️ Kompetisi Mahasiswa Informatika Politeknik Nasional (KMIPN)</span> • <span>2026</span>
+                    </div>
+                    <p class="pub-abstract">
+                      Competed among top polytechnic developers nationwide. Achieved 2nd place in the Hackathon Challenge Category for rapid full-stack prototype engineering and Silver Medal for VocaLearn's innovative AI adaptive learning platform.
+                    </p>
+                    <div class="cert-card-preview publication-cert-preview" onclick="openLightbox('assets/images/cert_kmipn.png', 'KMIPN 2026 — 2nd Winner Hackathon & Silver Medalist')">
+                      <img src="assets/images/cert_kmipn.png" alt="KMIPN 2026 Certificate" class="cert-card-img" loading="lazy">
+                      <span class="cert-overlay-badge">🔍 Click to Enlarge</span>
+                    </div>
+                    <div class="pub-actions">
+                      <button class="read-preview-btn" data-article="kmipn-award">
+                        <span>📖</span> Read Achievement Details
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Handwritten Sticky Note Pinned to Journal -->
+                  <div class="sticky-note sticky-pink">
+                    <div class="pin-head">📌</div>
+                    <p class="handwriting-text">
+                      "Clean code isn't just about passing tests - it's about respecting the next developer who reads it and the user who depends on it."
+                    </p>
+                    <span class="note-signature">— Alya</span>
+                  </div>
+                </div>
+
+                <!-- Right: Certifications & Organizational Experience -->
+                <div class="diary-page page-right">
+                  <div class="page-title-stamp">
+                    <span class="script-heading">Certifications</span>
+                    <span class="washi-tape tape-yellow tape-mini"></span>
+                  </div>
+
+                  <div class="opinion-articles-list">
+                    
+                    <!-- Certification 1: Huawei HCIA-Cloud -->
+                    <div class="opinion-card">
+                      <div class="op-source">
+                        <span class="media-badge badge-halloriau">☁️ Cloud Certification</span>
+                        <span class="reading-time">Huawei ICT Academy</span>
+                      </div>
+                      <h4 class="op-title">Huawei HCIA-Cloud Service V5.5</h4>
+                      <div class="cert-card-preview" onclick="openLightbox('assets/images/cert_huawei.png', 'Huawei HCIA-Cloud Service V5.5')">
+                        <img src="assets/images/cert_huawei.png" alt="Huawei HCIA-Cloud Certificate" class="cert-card-img" loading="lazy">
+                        <span class="cert-overlay-badge">🔍 Enlarge</span>
+                      </div>
+                      <p class="op-summary">
+                        Certified in enterprise cloud infrastructure, virtualization, Elastic Cloud Server (ECS), Virtual Private Cloud (VPC), and distributed cloud computing services.
+                      </p>
+                      <button class="read-preview-btn btn-small" data-article="cert-huawei">
+                        <span>🔍</span> View Certification Details
+                      </button>
+                    </div>
+                     <div class="opinion-card">
+                      <div class="op-source">
+                        <span class="media-badge badge-halloriau">☁️ Cloud Certification</span>
+                        <span class="reading-time">Huawei ICT Academy</span>
+                      </div>
+                      <h4 class="op-title">Huawei HCIA-Cloud Service V3.5</h4>
+                      <div class="cert-card-preview" onclick="openLightbox('assets/images/cert_huawei2.png', 'Huawei HCIA-Cloud Service V3.5')">
+                        <img src="assets/images/cert_huawei2.png" alt="Huawei HCIA-Cloud Certificate" class="cert-card-img" loading="lazy">
+                        <span class="cert-overlay-badge">🔍 Enlarge</span>
+                      </div>
+                      <p class="op-summary">
+                        Certified in enterprise cloud infrastructure, virtualization, Elastic Cloud Server (ECS), Virtual Private Cloud (VPC), and distributed cloud computing services.
+                      </p>
+                      <button class="read-preview-btn btn-small" data-article="cert-huawei">
+                        <span>🔍</span> View Certification Details
+                      </button>
+                    </div>
+
+                    <!-- Certification 2: Red Hat -->
+                    <div class="opinion-card">
+                      <div class="op-source">
+                        <span class="media-badge badge-halloriau">🐧 Linux Administration</span>
+                        <span class="reading-time">Red Hat Inc.</span>
+                      </div>
+                      <h4 class="op-title">Red Hat System Administration I (RH124) - Version 8.2</h4>
+                      <div class="cert-card-preview" onclick="openLightbox('assets/images/cert_redhat.png', 'Red Hat System Administration I (RH124) v8.2')">
+                        <img src="assets/images/cert_redhat.png" alt="Red Hat RH124 Certificate" class="cert-card-img" loading="lazy">
+                        <span class="cert-overlay-badge">🔍 Enlarge</span>
+                      </div>
+                      <p class="op-summary">
+                        Enterprise Linux (RHEL 8.2) foundational sysadmin: Bash scripting, systemctl service management, LVM storage, SSH, and firewall configuration.
+                      </p>
+                      <button class="read-preview-btn btn-small" data-article="cert-redhat">
+                        <span>🔍</span> View Certification Details
+                      </button>
+                    </div>
+
+                    <!-- Organizational Experience -->
+                    <div class="opinion-card">
+                      <div class="op-source">
+                        <span class="media-badge badge-kumparan">🤝 Leadership</span>
+                        <span class="reading-time">2020 - 2022</span>
+                      </div>
+                      <h4 class="op-title">OSIS SMA Negeri 9 Padang — Academic, Arts & Athletics Coordinator</h4>
+                      <p class="op-summary">
+                        Led student development programs, organized arts performances, and coordinated academic competitions and extracurricular achievements.
+                      </p>
+                      <button class="read-preview-btn btn-small" data-article="osis-experience">
+                        <span>🔍</span> View Leadership Role
+                      </button>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+            <!-- TAB 3: CODE SHOWCASE PREVIEW -->
+            <div class="notebook-tab-content" id="tab-works">
+              <div class="works-portfolio-wrapper">
+                <div class="works-header-banner">
+                  <p class="works-intro">A sneak peek of software applications and systems engineered by Alya. Click any card to explore full case studies!</p>
+                  <a href="#projects" class="jump-projects-btn"><span>⚡ Explore Full Project Showcase ➔</span></a>
+                </div>
+
+                <div class="works-grid">
+                  <!-- Work Card 1: VocaLearn -->
+                  <div class="work-card" data-category="fullstack">
+                    <div class="polaroid-frame" onclick="location.href='#projects'">
+                      <div class="polaroid-thumb-img">
+                        <img src="assets/images/project_vocalearn_demo.svg" alt="VocaLearn anonymized demo preview" class="polaroid-img" loading="lazy">
+                        <div class="polaroid-tag" style="position:absolute;top:8px;left:8px;z-index:2">Flutter & AI Engine</div>
+                      </div>
+                      <div class="polaroid-caption">
+                        <h4>VocaLearn Adaptive Engine</h4>
+                        <p>AI-powered adaptive learning platform with FastAPI, BKT algorithm, and Google Gemini AI.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Work Card 2: PPDB SD -->
+                  <div class="work-card" data-category="web">
+                    <div class="polaroid-frame" onclick="location.href='#projects'">
+                      <div class="polaroid-thumb-img">
+                        <img src="assets/images/project_ppdb.png" alt="PPDB SD Preview" class="polaroid-img" loading="lazy">
+                        <div class="polaroid-tag" style="position:absolute;top:8px;left:8px;z-index:2">PHP Web & GIS</div>
+                      </div>
+                      <div class="polaroid-caption">
+                        <h4>Sistem PPDB Sekolah Dasar</h4>
+                        <p>Elementary school admission system with Leaflet.js GIS spatial school location mapping.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Work Card 3: Peminjaman UKS -->
+                  <div class="work-card" data-category="web">
+                    <div class="polaroid-frame" onclick="location.href='#projects'">
+                      <div class="polaroid-thumb-img">
+                        <img src="assets/images/project_uks.png" alt="Peminjaman UKS Preview" class="polaroid-img" loading="lazy">
+                        <div class="polaroid-tag" style="position:absolute;top:8px;left:8px;z-index:2">PHP Native & PDO</div>
+                      </div>
+                      <div class="polaroid-caption">
+                        <h4>Peminjaman Fasilitas UKS</h4>
+                        <p>Digital medical facility and equipment borrowing management system with SweetAlert2.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Work Card 4: KMIPN 2026 -->
+                  <div class="work-card" data-category="fullstack">
+                    <div class="polaroid-frame" onclick="openLightbox('assets/images/cert_kmipn.png', 'KMIPN 2026 — 2nd Winner Hackathon & Silver Medalist')">
+                      <div class="polaroid-thumb-img">
+                        <img src="assets/images/cert_kmipn.png" alt="KMIPN 2026 Certificate" class="polaroid-img" loading="lazy">
+                        <div class="polaroid-tag" style="position:absolute;top:8px;left:8px;z-index:2">KMIPN 2026 Honors</div>
+                      </div>
+                      <div class="polaroid-caption">
+                        <h4>Hackathon 2nd & Silver Medal</h4>
+                        <p>National polytechnic informatics championship awards for rapid full-stack engineering.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- TAB 4: DEVELOPER NOTES & QUIRKS -->
+            <div class="notebook-tab-content" id="tab-notes">
+              <div class="diary-spread-grid">
+                
+                <div class="diary-page page-left">
+                  <div class="page-title-stamp">
+                    <span class="script-heading">Alya's Tech Manifesto</span>
+                  </div>
+
+                  <div class="manifesto-card">
+                    <p class="manifesto-quote">
+                      "I believe software should be reliable, user-focused, and engineered with pride. Whether designing asynchronous REST APIs or crafting accessible UI interactions, every line of code is an opportunity to solve real human problems."
+                    </p>
+                    <div class="bullet-list-coquette">
+                      <div class="bullet-item">🍵 <strong>Fuel:</strong> Iced matcha latte & dark mode terminal</div>
+                      <div class="bullet-item">💻 <strong>Tech Stack:</strong> Python, Flutter, FastAPI, Laravel, React, PHP, MySQL, Docker</div>
+                      <div class="bullet-item">⌨️ <strong>Editor:</strong> VS Code & Android Studio with clean pastel setup</div>
+                      <div class="bullet-item">💡 <strong>Dev Rule:</strong> Build reliable, user-focused software with clean architecture!</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="diary-page page-right">
+                  <div class="page-title-stamp">
+                    <span class="script-heading">Developer Checklist</span>
+                  </div>
+
+                  <!-- Interactive Checkable Sticky Note -->
+                  <div class="sticky-note sticky-green-pale full-sticky">
+                    <div class="pin-head">📌</div>
+                    <div class="sticky-title">Visitor's Code Sprint 🎀</div>
+                    <ul class="interactive-todo" id="interactive-todo">
+                      <li>
+                        <label class="todo-item">
+                          <input type="checkbox" id="check-1" checked>
+                          <span class="checkbox-custom"></span>
+                          <span>Explore Alya's interactive digital dev diary</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="todo-item">
+                          <input type="checkbox" id="check-2">
+                          <span class="checkbox-custom"></span>
+                          <span>Spill and drag the React/tech stickers</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="todo-item">
+                          <input type="checkbox" id="check-3">
+                          <span class="checkbox-custom"></span>
+                          <span>Explore the interactive project case studies</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="todo-item">
+                          <input type="checkbox" id="check-4">
+                          <span class="checkbox-custom"></span>
+                          <span>Leave a sweet message or collaboration note!</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION DIVIDER: Vintage Floral & Button Ribbon Border -->
+    <div class="tile-divider-band" aria-hidden="true">
+      <div class="tile-track">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+      </div>
+    </div>
+
+    <!-- SECTION: FEATURED SOFTWARE & TECH PROJECTS -->
+    <section id="projects" class="scrapbook-section section-projects">
+      <div class="section-container">
+        
+        <div class="projects-header-wrap">
+          <div class="script-subtitle">Software Engineering & Design Case Studies</div>
+          <h2 class="calligraphy-title-section">Featured <span class="ampersand">&</span> Software Projects</h2>
+          <p class="projects-sub">
+            Koleksi proyek perangkat lunak yang dikembangkan oleh <strong>Alya Khairunnisa</strong> 
+          </p>
+
+          <!-- Projects Filter Bar -->
+          <div class="projects-filter-bar">
+            <button class="project-filter-btn active" data-filter="all">All Projects ✨</button>
+            <button class="project-filter-btn" data-filter="fullstack">Full-Stack & AI 🧠</button>
+            <button class="project-filter-btn" data-filter="mobile">Mobile (Flutter) 📱</button>
+            <button class="project-filter-btn" data-filter="web">Web & GIS 🌐</button>
+            <button class="project-filter-btn" data-filter="system">Facility Systems ⚡</button>
+          </div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="featured-projects-grid" id="featured-projects-grid">
+          
+          <!-- Project 1: VocaLearn Adaptive Learning Engine -->
+          <article class="project-showcase-card" data-category="fullstack mobile web all">
+            <div class="washi-tape tape-pink tape-card-corner"></div>
+            <div class="project-card-media" onclick="openLightbox('assets/images/project_vocalearn_demo.svg', 'VocaLearn Adaptive Learning Engine — Flutter & AI Platform')">
+              <img src="assets/images/project_vocalearn_demo.svg" alt="VocaLearn anonymized demo preview" class="project-card-img" loading="lazy">
+              <div class="project-card-overlay">
+                <div class="project-card-top-badges">
+                  <span class="project-badge">🏆 KMIPN 2026 Silver Medalist</span>
+                  <span class="project-badge">2nd Winner Hackathon</span>
+                </div>
+                <span class="project-zoom-hint">🔍 Click to enlarge</span>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-meta-line">
+                <span class="proj-client">Adaptive EdTech Platform</span> • <span class="proj-role">Project Manager & Full-Stack Developer</span>
+              </div>
+              <h3 class="project-card-title">VocaLearn Adaptive Learning Engine</h3>
+              <p class="project-card-desc">
+                Platform pembelajaran adaptif untuk siswa vokasi yang mempersonalisasi modul belajar, mengukur kompetensi dengan algoritma Bayesian Knowledge Tracing (BKT), serta merekomendasikan materi, kuis, dan interaksi tutor cerdas.
+              </p>
+              <div class="project-tools-tags">
+                <span>Flutter</span>
+                <span>Python</span>
+                <span>FastAPI</span>
+                <span>MySQL</span>
+                <span>OpenAI</span>
+                <span>Google Gemini AI</span>
+                <span>JWT</span>
+              </div>
+              <div class="project-card-actions">
+                <div class="project-btn-group">
+                  <button class="open-project-btn" data-project="vocalearn">
+                    <span>🔍 Technical Case Study</span>
+                  </button>
+                  <a href="https://github.com/ariskiandrijusaldi/Vocalearn" target="_blank" rel="noopener noreferrer" class="btn-repo" title="View Source on GitHub">
+                    <span>🐙 GitHub</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Sistem Informasi PPDB Sekolah Dasar -->
+          <article class="project-showcase-card" data-category="web fullstack all">
+            <div class="washi-tape tape-yellow tape-card-corner"></div>
+            <div class="project-card-media" onclick="openLightbox('assets/images/project_ppdb.png', 'Sistem Informasi PPDB Sekolah Dasar — PHP & Leaflet.js GIS')">
+              <img src="assets/images/project_ppdb.png" alt="PPDB SD Preview" class="project-card-img" loading="lazy">
+              <div class="project-card-overlay">
+                <div class="project-card-top-badges">
+                  <span class="project-badge">🏫 Web & GIS System</span>
+                  <span class="project-badge">Digital PPDB SD</span>
+                </div>
+                <span class="project-zoom-hint">🔍 Click to enlarge</span>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-meta-line">
+                <span class="proj-client">Elementary School Admission</span> • <span class="proj-role">Full-Stack Developer</span>
+              </div>
+              <h3 class="project-card-title">Sistem Informasi PPDB Sekolah Dasar</h3>
+              <p class="project-card-desc">
+                Sistem penerimaan peserta didik baru (PPDB) berbasis web untuk menyederhanakan registrasi online tingkat sekolah dasar, pengelolaan database pendaftar, seleksi berkas administratif, dan visualisasi lokasi sekolah zonasi interaktif dengan Leaflet.js GIS.
+              </p>
+              <div class="project-tools-tags">
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>JavaScript</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Leaflet.js</span>
+              </div>
+              <div class="project-card-actions">
+                <div class="project-btn-group">
+                  <button class="open-project-btn" data-project="ppdb-sd">
+                    <span>🔍 Technical Case Study</span>
+                  </button>
+                  <a href="https://github.com/alyakhairunnisa1303/website_ppdb_sd" target="_blank" rel="noopener noreferrer" class="btn-repo" title="View Source on GitHub">
+                    <span>🐙 GitHub</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Peminjaman Fasilitas UKS -->
+          <article class="project-showcase-card" data-category="system web all">
+            <div class="washi-tape tape-green tape-card-corner"></div>
+            <div class="project-card-media" onclick="openLightbox('assets/images/project_uks.png', 'Peminjaman Fasilitas UKS — PHP Native & SweetAlert2')">
+              <img src="assets/images/project_uks.png" alt="Peminjaman UKS Preview" class="project-card-img" loading="lazy">
+              <div class="project-card-overlay">
+                <div class="project-card-top-badges">
+                  <span class="project-badge">🏥 Facility Borrowing System</span>
+                </div>
+                <span class="project-zoom-hint">🔍 Click to enlarge</span>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-meta-line">
+                <span class="proj-client">arts activity unit Operations</span> • <span class="proj-role">Developer</span>
+              </div>
+              <h3 class="project-card-title">Peminjaman Fasilitas UKS</h3>
+              <p class="project-card-desc">
+                Sistem berbasis web untuk mendigitalisasi peminjaman dan pengelolaan inventaris sarana UKS secara akuntabel, mulai dari autentikasi pengguna, inventarisasi fasilitas, pengajuan pinjam, upload dokumen bukti, hingga riwayat ketersediaan barang.
+              </p>
+              <div class="project-tools-tags">
+                <span>PHP Native</span>
+                <span>MySQL</span>
+                <span>PDO</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>SweetAlert2</span>
+              </div>
+              <div class="project-card-actions">
+                <div class="project-btn-group">
+                  <button class="open-project-btn" data-project="peminjaman-uks">
+                    <span>🔍 Technical Case Study</span>
+                  </button>
+                  <a href="https://github.com/alyakhairunnisa1303/website_peminjaman" target="_blank" rel="noopener noreferrer" class="btn-repo" title="View Source on GitHub">
+                    <span>🐙 GitHub</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Padu Padan Wardrobe -->
+          <article class="project-showcase-card" data-category="web all">
+            <div class="washi-tape tape-pink tape-card-corner"></div>
+            <div class="project-card-media" onclick="openLightbox('assets/images/project_wardobe.png', 'Padu Padan — Interactive Wardrobe & Outfit Planner')">
+              <img src="assets/images/project_wardobe.png" alt="Padu Padan wardrobe and outfit planner preview" class="project-card-img" loading="lazy">
+              <div class="project-card-overlay">
+                <div class="project-card-top-badges">
+                  <span class="project-badge">👗 Interactive Digital Wardrobe</span>
+                  <span class="project-badge">Outfit Planner</span>
+                </div>
+                <span class="project-zoom-hint">🔍 Click to enlarge</span>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-meta-line">
+                <span class="proj-client">Wardrobe & Outfit Planner</span> • <span class="proj-role">Web Application</span>
+              </div>
+              <h3 class="project-card-title">Padu Padan — Wardrobe Planner</h3>
+              <p class="project-card-desc">
+                Aplikasi wardrobe interaktif untuk memadukan pakaian berdasarkan kategori dan acara. Pengguna dapat menyusun outfit, melihat ringkasan kombinasi, serta menyimpan setelan pilihan.
+              </p>
+              <div class="project-tools-tags">
+                <span>Web App</span>
+                <span>Digital Wardrobe</span>
+                <span>Outfit Planner</span>
+                <span>Interactive UI</span>
+              </div>
+              <div class="project-card-actions">
+                <div class="project-btn-group">
+                  <button class="open-project-btn" data-project="padu-padan">
+                    <span>🔍 Project Case Study</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Collaborate Callout Box -->
+        <div class="project-collaborate-box">
+          <div class="collab-inner">
+            <span class="collab-icon">💻</span>
+            <div class="collab-text">
+              <h4>Tertarik merekrut atau berkolaborasi membangun software?</h4>
+              <p>Alya Khairunnisa terbuka untuk kesempatan Full-Stack Developer (Web & Mobile), proyek aplikasi adaptif berbasis AI, dan rekayasa perangkat lunak handal berorientasi pengguna.</p>
+            </div>
+            <a href="https://wa.me/6281365004546" target="_blank" rel="noopener noreferrer" class="cute-pill-btn btn-collab">
+              <span>💬</span> Hubungi via WhatsApp (081365004546)
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION DIVIDER: Vintage Floral & Button Ribbon Border -->
+    <div class="tile-divider-band" aria-hidden="true">
+      <div class="tile-track">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+        <img src="assets/images/tile_border.png" alt="Decorative floral ribbon border" class="tile-img">
+      </div>
+    </div>
+
+    <!-- SECTION 4: INTERACTIVE GUESTBOOK / "LEAVE A NOTE" -->
+    <section id="guestbook" class="scrapbook-section section-guestbook">
+      <div class="section-container">
+        
+        <div class="guestbook-header">
+          <div class="script-subtitle">Virtual Scrapbook Corkboard</div>
+          <h2 class="calligraphy-title-section">Leave a Sweet Note 💌</h2>
+          <p class="guestbook-sub">Say hello, drop tech feedback, or discuss engineering collaboration!</p>
+        </div>
+
+        <div class="corkboard-wrapper">
+          <!-- Form to stick a new note -->
+          <div class="leave-note-card">
+            <div class="washi-tape tape-pink tape-center"></div>
+            <h3>Stick Your Note 📌</h3>
+            <form id="guestbook-form" class="note-form">
+              <div class="form-group">
+                <label for="visitor-name">Your Name / GitHub Handle:</label>
+                <input type="text" id="visitor-name" placeholder="e.g. Maya or @frontend_dev" required maxlength="30">
+              </div>
+
+              <div class="form-group">
+                <label for="visitor-msg">Your Message:</label>
+                <textarea id="visitor-msg" rows="3" placeholder="Drop an encouraging word, clean code appreciation, or project idea..." required maxlength="180"></textarea>
+              </div>
+
+              <div class="form-group sticker-picker-group">
+                <label>Choose a sticker pin:</label>
+                <div class="sticker-selector" id="sticker-selector">
+                  <label class="radio-pill active"><input type="radio" name="pin-icon" value="🌸" checked> 🌸 Blossom</label>
+                  <label class="radio-pill"><input type="radio" name="pin-icon" value="💻"> 💻 Laptop</label>
+                  <label class="radio-pill"><input type="radio" name="pin-icon" value="✨"> ✨ Sparkle</label>
+                  <label class="radio-pill"><input type="radio" name="pin-icon" value="🍵"> 🍵 Matcha</label>
+                  <label class="radio-pill"><input type="radio" name="pin-icon" value="⚡"> ⚡ Lightning</label>
+                </div>
+              </div>
+
+              <button type="submit" class="submit-note-btn">
+                <span>📌 Pin to Corkboard</span>
+              </button>
+            </form>
+          </div>
+
+          <!-- The Corkboard Grid with Sticky Notes -->
+          <div class="corkboard-notes" id="corkboard-notes">
+            
+            <!-- Default Sample Notes (Tech & Dev Flavored) -->
+            
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <!-- FOOTER -->
+  <footer class="coquette-footer">
+    <div class="footer-inner">
+      <div class="footer-vintage-stamp">
+        <span class="stamp-icon">💻</span>
+        <span class="stamp-text">ALYA KHAIRUNNISA • 2026</span>
+        <span class="stamp-sub">D3 TEKNOLOGI INFORMASI • POLITEKNIK NEGERI PADANG</span>
+      </div>
+
+      <p class="footer-text">
+        Crafted with clean code, modern stacks, and user-focused software engineering 🌸
+      </p>
+
+      <div class="footer-links">
+        <a href="https://linkedin.com/in/alya-khairunnisa-004b18372" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <span>•</span>
+        <a href="https://github.com/alyakhairunnisa1303" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <span>•</span>
+        <a href="mailto:alyakhairunnisa9320@gmail.com">Email</a>
+        <span>•</span>
+        <a href="https://wa.me/6281365004546" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      </div>
+
+      <a href="#about" class="back-to-top" title="Back to top">
+        <span>☁️ Fly to Top ☁️</span>
+      </a>
+    </div>
+  </footer>
+
+  <!-- ARTICLE PREVIEW MODAL -->
+  <div class="article-modal" id="article-modal" aria-hidden="true" aria-modal="true" aria-labelledby="modal-title" role="dialog">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-card">
+      <div class="washi-tape tape-pink tape-center"></div>
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close Modal">✕</button>
+      
+      <div class="modal-header">
+        <span class="modal-badge" id="modal-badge">Publication Type</span>
+        <h3 class="modal-title" id="modal-title">Article Title</h3>
+        <div class="modal-meta" id="modal-meta">Platform • Date • Author</div>
+      </div>
+
+      <div class="modal-divider"></div>
+
+      <div class="modal-content" id="modal-content">
+        <!-- Injected via JavaScript -->
+      </div>
+
+      <div class="modal-footer">
+        <button class="cute-pill-btn btn-modal-done" id="modal-done-btn">Done Reading 🌸</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECT CASE STUDY MODAL -->
+  <div class="article-modal project-modal" id="project-modal" aria-hidden="true" aria-modal="true" aria-labelledby="project-modal-title" role="dialog">
+    <div class="modal-backdrop" id="project-modal-backdrop"></div>
+    <div class="modal-card project-modal-card">
+      <div class="washi-tape tape-green tape-center"></div>
+      <button class="modal-close-btn" id="project-modal-close-btn" aria-label="Close Project Modal">✕</button>
+      
+      <div class="modal-header">
+        <span class="modal-badge badge-green" id="project-modal-badge">Category</span>
+        <h3 class="modal-title" id="project-modal-title">Project Case Study</h3>
+        <div class="modal-meta" id="project-modal-meta">Role • Client / Platform • Timeline</div>
+      </div>
+
+      <div class="modal-divider"></div>
+
+      <div class="modal-content" id="project-modal-content">
+        <!-- Injected dynamically via script.js -->
+      </div>
+
+      <div class="modal-footer">
+        <button class="cute-pill-btn btn-modal-done" id="project-modal-done-btn">Close Case Study 🌸</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- IMAGE LIGHTBOX MODAL -->
+  <div class="image-lightbox-modal" id="image-lightbox" aria-hidden="true" aria-modal="true" aria-labelledby="lightbox-caption" role="dialog">
+    <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close-btn" id="lightbox-close-btn" aria-label="Close Lightbox">✕</button>
+      <img src="" alt="Lightbox Preview" class="lightbox-img" id="lightbox-img">
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-container" id="toast-container"></div>  <!-- SCRIPT -->
+  <script src="script.js?v=6"></script>
+</body>
+</html>
