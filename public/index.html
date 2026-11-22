@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Great+Vibes&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sacramento&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="style.css?v=7">
+  <link rel="stylesheet" href="style.css?v=8">
 </head>
 <body>
   <!-- Canvas for Sparkle Particle Trail -->
@@ -165,9 +165,9 @@
               </a>
 
               <!-- CV -->
-              <a href="https://drive.google.com/file/d/1JAmog7lvPwC-MFr4Q_SP1DJKdvlirGJ9/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="contact-item contact-cv" title="Download CV">
+              <a href="https://drive.google.com/file/d/1AV7GtXRoWYZLdwMtmoFq_sVRdgEa2lJb/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="contact-item contact-cv" title="Open CV">
                 <span class="contact-icon">📝</span>
-                <span class="contact-label">Download CV</span>
+                <span class="contact-label">Open CV</span>
               </a>
             </div>
 
@@ -206,7 +206,7 @@
           <h2 class="calligraphy-title-section">Software <span class="ampersand">&</span> Tech Stack</h2>
           <p class="skills-hint">
             <span class="hint-sparkle">✨</span> 
-            <strong>Interactive Dev Sticker Pack:</strong> Click to inspect tech details or <span class="highlight-drag">drag any sticker</span> freely on your screen!
+            <strong>Interactive Dev Sticker Pack:</strong> Click to inspect tech details or choose <span class="highlight-drag">Rapikan Skill</span> for an easy-to-scan layout.
             <span class="hint-sparkle">✨</span>
           </p>
 
@@ -217,8 +217,8 @@
             <button id="btn-gather-stickers" class="cute-pill-btn btn-gather">
               <span>✉️</span> Tuck Back Inside
             </button>
-            <button id="btn-add-custom-sticker" class="cute-pill-btn btn-add">
-              <span>🎀</span> Stamp a Cute Dev Sticker
+            <button id="btn-organize-stickers" class="cute-pill-btn btn-organize">
+              <span>☷</span> Sort My Skills
             </button>
           </div>
         </div>
@@ -282,10 +282,28 @@
               <span class="sticker-text">PHP</span>
             </div>
 
-            <div class="scrapbook-sticker sticker-app sticker-ts" data-skill="JavaScript (ES6+)" data-desc="Modern asynchronous JavaScript, Leaflet.js GIS spatial integration, DOM manipulations, and dynamic client-side interactions.">
+            <div class="scrapbook-sticker sticker-app sticker-js" data-skill="JavaScript (ES6+)" data-desc="Modern asynchronous JavaScript, Leaflet.js GIS spatial integration, DOM manipulations, and dynamic client-side interactions.">
               <div class="sticker-gloss"></div>
               <span class="sticker-badge-icon">✨</span>
               <span class="sticker-text">JavaScript</span>
+            </div>
+
+            <div class="scrapbook-sticker sticker-app sticker-ts" data-skill="TypeScript" data-desc="Type-safe application development used with Next.js for the RanahTalenta AI-powered recruitment screening platform.">
+              <div class="sticker-gloss"></div>
+              <span class="sticker-badge-icon">🔷</span>
+              <span class="sticker-text">TypeScript</span>
+            </div>
+
+            <div class="scrapbook-sticker sticker-app sticker-nextjs" data-skill="Next.js" data-desc="Building the RanahTalenta recruitment screening platform with Next.js and TypeScript.">
+              <div class="sticker-gloss"></div>
+              <span class="sticker-badge-icon">▲</span>
+              <span class="sticker-text">Next.js</span>
+            </div>
+
+            <div class="scrapbook-sticker sticker-app sticker-tailwind" data-skill="Tailwind CSS" data-desc="Styling the RanahTalenta platform with Tailwind CSS.">
+              <div class="sticker-gloss"></div>
+              <span class="sticker-badge-icon">🌊</span>
+              <span class="sticker-text">Tailwind CSS</span>
             </div>
 
             <div class="scrapbook-sticker sticker-app sticker-dart" data-skill="Dart Language" data-desc="Strongly typed language powering Flutter applications with asynchronous programming, streams, and null safety.">
@@ -369,7 +387,7 @@
             </div>
 
             <!-- Soft & Specialization Badges -->
-            <div class="scrapbook-sticker sticker-skill sticker-ai" data-skill="AI Integration (OpenAI & Gemini)" data-desc="Integrating generative AI APIs (OpenAI, Google Gemini) for adaptive educational recommendations and dynamic quizzes.">
+            <div class="scrapbook-sticker sticker-skill sticker-ai" data-skill="AI Integration (OpenAI & Gemini)" data-desc="Integrating generative AI APIs for adaptive learning and semantic candidate-to-job matching in recruitment screening.">
               <span class="sticker-pin">✨</span>
               <span class="sticker-text">AI Integration</span>
             </div>
@@ -487,16 +505,55 @@
                     <span class="washi-tape tape-pink tape-mini"></span>
                   </div>
 
+                  <!-- RanahTalenta — Backend AI Engineer -->
+                  <div class="diary-entry-card entry-freelance">
+                    <div class="entry-header">
+                      <span class="entry-badge badge-green">🏆 1st Winner — AI Hackathon 2026</span>
+                      <span class="entry-year">November 2026</span>
+                    </div>
+                    <h3 class="entry-title">Backend AI Engineer</h3>
+                    <div class="entry-role">RanahTalenta — AI-Powered Recruitment Screening System</div>
+                    <p class="entry-body">
+                      Built the AI backend for a recruitment platform that screens CVs and ranks candidates with explainable results. Developed a hybrid semantic-scoring engine using <strong>Google Gemini API</strong>, anonymized candidate name, gender, and age before evaluation, and connected the pipeline from CV parsing to ranked output.
+                    </p>
+                    <div class="entry-tags">
+                      <span>#NextJS</span>
+                      <span>#TypeScript</span>
+                      <span>#GoogleGemini</span>
+                      <span>#MySQL</span>
+                      <span>#TailwindCSS</span>
+                    </div>
+                  </div>
+
+                  <!-- TANI-CAST — Technical Coordinator -->
+                  <div class="diary-entry-card entry-business">
+                    <div class="entry-header">
+                      <span class="entry-badge badge-purple">🏆 10 Besar — Ketahanan Pangan</span>
+                      <span class="entry-year">November 2026</span>
+                    </div>
+                    <h3 class="entry-title">Koordinator Teknis · Tim 5 Orang</h3>
+                    <div class="entry-role">TANI-CAST — Penasihat AI untuk Sinkronisasi Tanam Padi dan Pemantauan Hama</div>
+                    <p class="entry-body">
+                      Memimpin bersama pengembangan prototipe untuk PLAY IT! PLUS Hackathon Deeptech 2026. Merancang arsitektur sistem, backend, dan simulator percakapan; membangun model probabilitas periode kering yang divalidasi dengan baseline berbasis aturan; serta mengembangkan pengoptimal jadwal tanam dan pipeline LLM untuk menyusun laporan petani.
+                    </p>
+                    <div class="entry-tags">
+                      <span>#KetahananPangan</span>
+                      <span>#MachineLearning</span>
+                      <span>#RAG</span>
+                      <span>#SystemDesign</span>
+                    </div>
+                  </div>
+
                   <!-- Item 1: VocaLearn — Project Manager & Full-Stack Developer -->
                   <div class="diary-entry-card entry-sdg">
                     <div class="entry-header">
-                      <span class="entry-badge badge-green">🏆 KMIPN Award-Winning Project</span>
-                      <span class="entry-year">2025 - 2026</span>
+                      <span class="entry-badge badge-green">🏆 2nd Winner · Silver Medal · KMIPN 2026</span>
+                      <span class="entry-year">September 2026</span>
                     </div>
                     <h3 class="entry-title">Project Manager & Full-Stack Developer</h3>
                     <div class="entry-role">VocaLearn — AI-Powered Adaptive Learning Platform</div>
                     <p class="entry-body">
-                      Led the development of VocaLearn as Project Manager while contributing to both <strong>backend (FastAPI REST APIs, JWT authentication, MySQL)</strong> and <strong>frontend (Flutter mobile app)</strong>. Integrated AI-powered recommendations using <strong>OpenAI & Google Gemini</strong> and BKT-based competency assessment.
+                      Managed project coordination while developing <strong>FastAPI REST APIs, MySQL integration, and JWT authentication</strong>, plus the <strong>Flutter mobile app</strong>. Integrated OpenAI and Google Gemini recommendations with Bayesian Knowledge Tracing (BKT) to estimate student topic mastery.
                     </p>
                     <div class="entry-tags">
                       <span>#Flutter</span>
@@ -591,17 +648,42 @@
                   </div>
 
                   <div class="publication-paper-card">
-                    <div class="pub-type-tag">🏆 National Competition Achievement</div>
+                    <div class="pub-type-tag">🏆 National AI Hackathon Achievement</div>
                     <h3 class="pub-headline">
-                      2nd Winner — Hackathon Challenge & Silver Medalist at KMIPN Awards 2026
+                      1st Winner — AI Hackathon 2026
                     </h3>
                     <div class="pub-meta">
-                      <span>🏛️ Kompetisi Mahasiswa Informatika Politeknik Nasional (KMIPN)</span> • <span>2026</span>
+                      <span>🏛️ UKM Cybertech Politeknik Negeri Padang</span> • <span>National Level • November 2026</span>
                     </div>
                     <p class="pub-abstract">
-                      Competed among top polytechnic developers nationwide. Achieved 2nd place in the Hackathon Challenge Category for rapid full-stack prototype engineering and Silver Medal for VocaLearn's innovative AI adaptive learning platform.
+                      First place at the national-level AI Hackathon 2026 with Team Singa di Laga for RanahTalenta, an AI-powered recruitment screening system that delivers explainable candidate rankings while supporting bias-free assessment.
                     </p>
-                    <div class="cert-card-preview publication-cert-preview" onclick="openLightbox('assets/images/cert_kmipn.png', 'KMIPN 2026 — 2nd Winner Hackathon & Silver Medalist')">
+                    <div class="cert-card-preview publication-cert-preview" onclick="openLightbox('assets/images/cert_aiHackaton.png', 'RanahTalenta — 1st Winner, National AI Hackathon 2026')">
+                      <img src="assets/images/cert_aiHackaton.png" alt="RanahTalenta AI Hackathon 2026 first-place certificate" class="cert-card-img" loading="lazy">
+                      <span class="cert-overlay-badge">🔍 Click to Enlarge</span>
+                    </div>
+                    <div class="pub-actions">
+                      <button class="read-preview-btn" data-article="ranahtalenta-award">
+                        <span>📖</span> Read Achievement Details
+                      </button>
+                      <a href="https://github.com/alyakhairunnisa1303/RanahTalenta" target="_blank" rel="noopener noreferrer" class="btn-repo">
+                        <span>🐙 View RanahTalenta</span>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="publication-paper-card">
+                    <div class="pub-type-tag">🏆 National Competition Achievement</div>
+                    <h3 class="pub-headline">
+                      2nd Winner (Silver Medal) — KMIPN 2026 Hackathon Challenge
+                    </h3>
+                    <div class="pub-meta">
+                      <span>🏛️ Kompetisi Mahasiswa Informatika Politeknik Nasional (KMIPN)</span> • <span>National Level • September 2026</span>
+                    </div>
+                    <p class="pub-abstract">
+                      Earned 2nd place (Silver Medal) in the Hackathon Challenge with Team Ajo Goes To Makassar for VocaLearn, an AI-powered adaptive learning platform.
+                    </p>
+                    <div class="cert-card-preview publication-cert-preview" onclick="openLightbox('assets/images/cert_kmipn.png', 'KMIPN 2026 — 2nd Winner Hackathon')">
                       <img src="assets/images/cert_kmipn.png" alt="KMIPN 2026 Certificate" class="cert-card-img" loading="lazy">
                       <span class="cert-overlay-badge">🔍 Click to Enlarge</span>
                     </div>
@@ -609,6 +691,23 @@
                       <button class="read-preview-btn" data-article="kmipn-award">
                         <span>📖</span> Read Achievement Details
                       </button>
+                    </div>
+                  </div>
+
+                  <div class="publication-paper-card">
+                    <div class="pub-type-tag">🌾 National Deeptech Hackathon Achievement</div>
+                    <h3 class="pub-headline">
+                      Top 10 Team — Food Security, PLAY IT! PLUS Hackathon Deeptech 2026
+                    </h3>
+                    <div class="pub-meta">
+                      <span>🏛️ Politeknik Negeri Malang</span> • <span>National Level • November 2026</span>
+                    </div>
+                    <p class="pub-abstract">
+                      Recognized as a Top 10 team in the Food Security category with Team Gowes ka Malang wak nah for TANI-CAST, an AI advisor for synchronized rice planting and pest monitoring.
+                    </p>
+                    <div class="cert-card-preview publication-cert-preview" onclick="openLightbox('assets/images/cert_tanicast.png', 'TANI-CAST — Top 10, PLAY IT! PLUS Hackathon Deeptech 2026')">
+                      <img src="assets/images/cert_tanicast.png" alt="TANI-CAST PLAY IT! PLUS Hackathon Deeptech 2026 Top 10 certificate" class="cert-card-img" loading="lazy">
+                      <span class="cert-overlay-badge">🔍 Click to Enlarge</span>
                     </div>
                   </div>
 
@@ -726,7 +825,39 @@
                       </div>
                       <div class="polaroid-caption">
                         <h4>VocaLearn Adaptive Engine</h4>
-                        <p>AI-powered adaptive learning platform with FastAPI, BKT algorithm, and Google Gemini AI.</p>
+                        <p>Adaptive learning platform with FastAPI, Flutter, OpenAI and Google Gemini recommendations, and BKT competency assessment.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Work Card: RanahTalenta -->
+                  <div class="work-card" data-category="fullstack">
+                    <div class="polaroid-frame" onclick="location.href='#projects'">
+                      <div class="polaroid-thumb-img project-ai-preview" role="img" aria-label="RanahTalenta AI recruitment screening preview">
+                        <div class="ai-preview-window">
+                          <span class="ai-preview-label">AI CANDIDATE MATCH</span>
+                          <strong>RanahTalenta</strong>
+                          <div class="ai-preview-candidate"><span>CV parsing</span><b>Complete</b></div>
+                          <div class="ai-preview-candidate"><span>Candidate ranking</span><b>Explained</b></div>
+                        </div>
+                      </div>
+                      <div class="polaroid-caption">
+                        <h4>RanahTalenta</h4>
+                        <p>Gemini-powered recruitment screening with semantic scoring and explainable candidate rankings.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Work Card: TANI-CAST -->
+                  <div class="work-card" data-category="fullstack">
+                    <div class="polaroid-frame" onclick="location.href='#projects'">
+                     <div class="polaroid-thumb-img">
+                        <img src="assets/images/project_tanicast.png" alt="TANI-CAST rice planting and pest monitoring advisor preview" class="polaroid-img" loading="lazy">
+                        <div class="polaroid-tag" style="position:absolute;top:8px;left:8px;z-index:2">Flutter & AI Engine</div>
+                      </div>
+                      <div class="polaroid-caption">
+                        <h4>TANI-CAST</h4>
+                        <p>Penasihat AI untuk menyinkronkan jadwal tanam padi dan pemantauan hama, dikembangkan untuk PLAY IT! PLUS Hackathon Deeptech 2026.</p>
                       </div>
                     </div>
                   </div>
@@ -761,14 +892,14 @@
 
                   <!-- Work Card 4: KMIPN 2026 -->
                   <div class="work-card" data-category="fullstack">
-                    <div class="polaroid-frame" onclick="openLightbox('assets/images/cert_kmipn.png', 'KMIPN 2026 — 2nd Winner Hackathon & Silver Medalist')">
+                    <div class="polaroid-frame" onclick="openLightbox('assets/images/cert_kmipn.png', 'KMIPN 2026 — 2nd Winner (Silver Medal) Hackathon Challenge')">
                       <div class="polaroid-thumb-img">
                         <img src="assets/images/cert_kmipn.png" alt="KMIPN 2026 Certificate" class="polaroid-img" loading="lazy">
-                        <div class="polaroid-tag" style="position:absolute;top:8px;left:8px;z-index:2">KMIPN 2026 Honors</div>
+                        <div class="polaroid-tag" style="position:absolute;top:8px;left:8px;z-index:2">KMIPN · September 2026</div>
                       </div>
                       <div class="polaroid-caption">
-                        <h4>Hackathon 2nd & Silver Medal</h4>
-                        <p>National polytechnic informatics championship awards for rapid full-stack engineering.</p>
+                        <h4>2nd Winner · Silver Medal</h4>
+                        <p>Hackathon Challenge award with Team Ajo Goes To Makassar for VocaLearn.</p>
                       </div>
                     </div>
                   </div>
@@ -893,15 +1024,55 @@
         <!-- Projects Grid -->
         <div class="featured-projects-grid" id="featured-projects-grid">
           
-          <!-- Project 1: VocaLearn Adaptive Learning Engine -->
+          <!-- Project: RanahTalenta AI-Powered Recruitment Screening System -->
+          <article class="project-showcase-card" data-category="fullstack web all">
+            <div class="washi-tape tape-green tape-card-corner"></div>
+            <div class="project-card-media" onclick="openLightbox('assets/images/project_ranahtalenta.png', 'RanahTalenta AI-Powered Recruitment Screening System')">
+              <img src="assets/images/project_ranahtalenta.png" alt="RanahTalenta recruitment screening dashboard preview" class="project-card-img" loading="lazy">
+              <div class="project-card-overlay">
+                <div class="project-card-top-badges">
+                  <span class="project-badge">🏆 1st Winner AI Hackathon 2026</span>
+                  <span class="project-badge">AI Recruitment</span>
+                </div>
+                <span class="project-zoom-hint">🔍 Click to enlarge</span>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-meta-line">
+                <span class="proj-client">AI-Powered Recruitment Platform</span> • <span class="proj-role">Backend AI Engineer</span>
+              </div>
+              <h3 class="project-card-title">RanahTalenta AI-Powered Recruitment Screening System</h3>
+              <p class="project-card-desc">
+                Platform screening rekrutmen berbasis AI yang membantu tim HR menilai banyak CV secara cepat dan transparan. Mesin hybrid semantic-scoring mencocokkan kompetensi kandidat dengan job description, menganonimkan identitas sensitif untuk mengurangi bias, serta menghasilkan peringkat kandidat yang dapat dijelaskan.
+              </p>
+              <div class="project-tools-tags">
+                <span>Next.js</span>
+                <span>TypeScript</span>
+                <span>Google Gemini API</span>
+                <span>MySQL</span>
+                <span>Tailwind CSS</span>
+              </div>
+              <div class="project-card-actions">
+                <div class="project-btn-group">
+                  <button class="open-project-btn" data-project="ranahtalenta">
+                    <span>🔍 Technical Case Study</span>
+                  </button>
+                  <a href="https://github.com/alyakhairunnisa1303/RanahTalenta" target="_blank" rel="noopener noreferrer" class="btn-repo" title="View Source on GitHub">
+                    <span>🐙 GitHub</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project: VocaLearn Adaptive Learning Engine -->
           <article class="project-showcase-card" data-category="fullstack mobile web all">
             <div class="washi-tape tape-pink tape-card-corner"></div>
             <div class="project-card-media" onclick="openLightbox('assets/images/project_vocalearn_demo.svg', 'VocaLearn Adaptive Learning Engine — Flutter & AI Platform')">
               <img src="assets/images/project_vocalearn_demo.svg" alt="VocaLearn anonymized demo preview" class="project-card-img" loading="lazy">
               <div class="project-card-overlay">
                 <div class="project-card-top-badges">
-                  <span class="project-badge">🏆 KMIPN 2026 Silver Medalist</span>
-                  <span class="project-badge">2nd Winner Hackathon</span>
+                  <span class="project-badge">🏆 2nd Winner · Silver Medal · KMIPN 2026</span>
                 </div>
                 <span class="project-zoom-hint">🔍 Click to enlarge</span>
               </div>
@@ -912,7 +1083,7 @@
               </div>
               <h3 class="project-card-title">VocaLearn Adaptive Learning Engine</h3>
               <p class="project-card-desc">
-                Platform pembelajaran adaptif untuk siswa vokasi yang mempersonalisasi modul belajar, mengukur kompetensi dengan algoritma Bayesian Knowledge Tracing (BKT), serta merekomendasikan materi, kuis, dan interaksi tutor cerdas.
+                Platform pembelajaran adaptif untuk siswa vokasi yang mempersonalisasi modul, menilai penguasaan materi dengan Bayesian Knowledge Tracing (BKT), dan merekomendasikan materi, kuis, serta interaksi tutor. Meraih 2nd Winner (Silver Medal) pada KMIPN 2026 bersama Team Ajo Goes To Makassar.
               </p>
               <div class="project-tools-tags">
                 <span>Flutter</span>
@@ -920,7 +1091,7 @@
                 <span>FastAPI</span>
                 <span>MySQL</span>
                 <span>OpenAI</span>
-                <span>Google Gemini AI</span>
+                <span>Google Gemini API</span>
                 <span>JWT</span>
               </div>
               <div class="project-card-actions">
@@ -928,9 +1099,49 @@
                   <button class="open-project-btn" data-project="vocalearn">
                     <span>🔍 Technical Case Study</span>
                   </button>
-                  <a href="https://github.com/ariskiandrijusaldi/Vocalearn" target="_blank" rel="noopener noreferrer" class="btn-repo" title="View Source on GitHub">
+                  <a href="https://github.com/alyakhairunnisa1303/VocaLearn" target="_blank" rel="noopener noreferrer" class="btn-repo" title="View Source on GitHub">
                     <span>🐙 GitHub</span>
                   </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project: TANI-CAST AI Advisor -->
+          <article class="project-showcase-card" data-category="fullstack all">
+            <div class="washi-tape tape-green tape-card-corner"></div>
+            <div class="project-card-media" onclick="openLightbox('assets/images/project_tanicast.png', 'TANI-CAST: Penasihat AI untuk jadwal tanam padi dan pemantauan hama')">
+              <img src="assets/images/project_tanicast.png" alt="TANI-CAST rice planting and pest monitoring advisor preview" class="project-card-img" loading="lazy">
+              <div class="project-card-overlay">
+                <div class="project-card-top-badges">
+                  <span class="project-badge">🏆 10 Besar · PLAY IT! PLUS 2026</span>
+                  <span class="project-badge">Ketahanan Pangan</span>
+                </div>
+                <span class="project-zoom-hint">🔍 Click to enlarge</span>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-meta-line">
+                <span class="proj-client">PLAY IT! PLUS Hackathon Deeptech 2026</span> • <span class="proj-role">Koordinator Teknis · Tim 5 Orang</span>
+              </div>
+              <h3 class="project-card-title">TANI-CAST: Penasihat AI untuk Sinkronisasi Tanam Padi dan Pemantauan Hama</h3>
+              <p class="project-card-desc">
+                Mengembangkan bersama prototipe penasihat AI untuk kelompok tani. Sistem ini merekomendasikan jadwal tanam dan prioritas pemantauan hama, memperkirakan probabilitas periode kering pada setiap tanggal tanam, mengoptimalkan jadwal dengan mempertimbangkan ketersediaan air, tenaga kerja, alat, dan benih, serta menyusun laporan bebas petani menggunakan pipeline LLM.
+              </p>
+              <div class="project-tools-tags">
+                <span>Pembelajaran Mesin</span>
+                <span>LLM</span>
+                <span>RAG</span>
+                <span>Backend</span>
+                <span>Arsitektur Sistem</span>
+                <span>Brier Score</span>
+                <span>CRPS</span>
+              </div>
+              <div class="project-card-actions">
+                <div class="project-btn-group">
+                  <button class="open-project-btn" data-project="tani-cast">
+                    <span>🔍 Technical Case Study</span>
+                  </button>
                 </div>
               </div>
             </div>
@@ -964,6 +1175,7 @@
                 <span>HTML</span>
                 <span>CSS</span>
                 <span>Leaflet.js</span>
+                <span>PDO</span>
               </div>
               <div class="project-card-actions">
                 <div class="project-btn-group">
@@ -1245,6 +1457,6 @@
 
   <!-- TOAST NOTIFICATION CONTAINER -->
   <div class="toast-container" id="toast-container"></div>  <!-- SCRIPT -->
-  <script src="script.js?v=6"></script>
+  <script src="script.js?v=9"></script>
 </body>
 </html>

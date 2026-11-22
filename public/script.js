@@ -240,11 +240,12 @@ let highestZIndex = 100;
 function initStickerInteractions() {
   const stickers = document.querySelectorAll('.scrapbook-sticker');
   const board = document.getElementById('stickers-board');
+  const stage = document.getElementById('envelope-stage');
   const envelope = document.getElementById('envelope-body');
   const waxSeal = document.getElementById('wax-seal');
   const btnSpill = document.getElementById('btn-spill-stickers');
   const btnGather = document.getElementById('btn-gather-stickers');
-  const btnAddSticker = document.getElementById('btn-add-custom-sticker');
+  const btnOrganize = document.getElementById('btn-organize-stickers');
 
   const bubbleName = document.getElementById('bubble-skill-name');
   const bubbleDesc = document.getElementById('bubble-skill-desc');
@@ -288,6 +289,8 @@ function initStickerInteractions() {
   if (btnSpill) {
     btnSpill.addEventListener('click', () => {
       playChimeSound();
+      if (board) board.classList.remove('is-organized');
+      if (stage) stage.classList.remove('is-organized');
       if (envelope && !envelope.classList.contains('opened')) {
         envelope.classList.add('opened');
       }
@@ -314,6 +317,8 @@ function initStickerInteractions() {
   if (btnGather) {
     btnGather.addEventListener('click', () => {
       playPopSound(500);
+      if (board) board.classList.remove('is-organized');
+      if (stage) stage.classList.remove('is-organized');
       stickers.forEach((sticker, i) => {
         const def = defaultPositions[i];
         if (def) {
@@ -331,43 +336,18 @@ function initStickerInteractions() {
     });
   }
 
-  if (btnAddSticker && board) {
-    const cuteDevStickers = [
-      { text: 'TypeScript Fan ⚡', bg: '#3178C6', color: '#FFF' },
-      { text: 'Bug Hunter 🐛', bg: '#EF4444', color: '#FFF' },
-      { text: 'CSS Wizard 🎨', bg: '#06B6D4', color: '#FFF' },
-      { text: 'git push --force 🚀', bg: '#F05032', color: '#FFF' },
-      { text: 'Zero Errors 🟢', bg: '#10B981', color: '#FFF' },
-      { text: 'Dark Mode Fan 🌙', bg: '#1E1E2E', color: '#CBA6F7' }
-    ];
-
-    btnAddSticker.addEventListener('click', () => {
+  if (btnOrganize && board) {
+    btnOrganize.addEventListener('click', () => {
       playChimeSound();
-      const randItem = cuteDevStickers[Math.floor(Math.random() * cuteDevStickers.length)];
-      const newSticker = document.createElement('div');
-      newSticker.className = 'scrapbook-sticker';
-      newSticker.style.background = randItem.bg;
-      newSticker.style.color = randItem.color;
-      newSticker.style.top = `${Math.floor(Math.random() * 200 + 50)}px`;
-      newSticker.style.left = `${Math.floor(Math.random() * 60 + 20)}%`;
-      newSticker.style.transform = `rotate(${Math.floor(Math.random() * 20 - 10)}deg)`;
-      const stickerText = document.createElement('span');
-      stickerText.className = 'sticker-text';
-      stickerText.textContent = randItem.text;
-      newSticker.appendChild(stickerText);
-      newSticker.setAttribute('data-skill', randItem.text);
-      newSticker.setAttribute('data-desc', 'A custom stamped developer sticker pinned to Alya’s board!');
-
-      board.appendChild(newSticker);
-      makeDraggable(newSticker);
-
-      newSticker.addEventListener('click', () => {
-        playPopSound(650);
-        if (bubbleName) bubbleName.textContent = randItem.text;
-        if (bubbleDesc) bubbleDesc.textContent = 'Custom developer sticker stamped by you!';
+      stickers.forEach((sticker) => {
+        sticker.style.left = '';
+        sticker.style.top = '';
+        sticker.style.transform = '';
+        sticker.style.transition = '';
       });
-
-      showToast(`Stamped: ${randItem.text}!`, '💻');
+      board.classList.add('is-organized');
+      if (stage) stage.classList.add('is-organized');
+      showToast('Skill list just got a glow up! ✨');
     });
   }
 }
@@ -380,6 +360,7 @@ function makeDraggable(element) {
 
   element.addEventListener('pointerdown', (e) => {
     if (e.button && e.button !== 0) return;
+    if (element.parentElement.classList.contains('is-organized')) return;
 
     isDragging = true;
     highestZIndex++;
@@ -451,8 +432,40 @@ function initNotebookTabs() {
    ========================================================================== */
 
 const projectDatabase = {
+  'ranahtalenta': {
+    badge: '🏆 1st Winner • AI Hackathon 2026',
+    title: 'RanahTalenta AI-Powered Recruitment Screening System',
+    meta: 'Role: Backend AI Engineer • Stack: Next.js, TypeScript, Google Gemini API, MySQL, Tailwind CSS',
+    content: `
+      <img src="assets/images/project_ranahtalenta.png" class="modal-project-img" onclick="openLightbox(this.src, 'RanahTalenta AI-Powered Recruitment Screening System')" alt="RanahTalenta recruitment screening dashboard">
+      <div class="project-case-grid">
+        <div class="case-box">
+          <h5>🎯 Recruitment Screening Challenge</h5>
+          <p>HR teams need to review hundreds of CVs efficiently while keeping candidate assessments consistent, transparent, and focused on role-relevant competencies.</p>
+        </div>
+        <div class="case-box">
+          <h5>💡 AI-Powered Solution</h5>
+          <p>RanahTalenta uses a hybrid semantic-scoring engine to compare candidate competencies with a job description, then returns a ranked candidate list with an explanation for each ranking.</p>
+        </div>
+      </div>
+
+      <h4>💻 Technical Highlights:</h4>
+      <ul>
+        <li><strong>Hybrid Semantic Scoring:</strong> Integrated the Google Gemini API to measure semantic alignment between candidate competencies and job requirements.</li>
+        <li><strong>Bias-Free Screening:</strong> Anonymized candidate names, gender, and age before evaluation to support fairer, objective assessments.</li>
+        <li><strong>End-to-End AI Pipeline:</strong> Connected CV parsing, candidate scoring, and explainable ranking output into a reliable screening workflow.</li>
+        <li><strong>Application Stack:</strong> Built with Next.js and TypeScript, with MySQL and Tailwind CSS.</li>
+      </ul>
+
+      <div class="case-box" style="margin-top: 14px;">
+        <h5>🏆 Recognition:</h5>
+        <p><strong>1st Winner, AI Hackathon 2026</strong> — UKM Cybertech Politeknik Negeri Padang, National Level, November 2026. Team: Singa di Laga.</p>
+        <p style="margin-top: 8px;"><a href="https://github.com/alyakhairunnisa1303/RanahTalenta" target="_blank" rel="noopener noreferrer" style="color: var(--pink-deep); font-weight: 700; text-decoration: underline;">➔ View GitHub Repository (alyakhairunnisa1303/RanahTalenta)</a></p>
+      </div>
+    `
+  },
   'vocalearn': {
-    badge: '🏆 KMIPN 2026 Winner • AI Adaptive Learning',
+    badge: '🏆 2nd Winner • Silver Medal • KMIPN 2026 Hackathon Challenge',
     title: 'VocaLearn Adaptive Learning Engine',
     meta: 'Role: Project Manager & Full-Stack Developer • Stack: Flutter, Python (FastAPI), MySQL, OpenAI, Gemini AI, JWT',
     content: `
@@ -464,22 +477,52 @@ const projectDatabase = {
         </div>
         <div class="case-box">
           <h5>💡 Solution & Leadership</h5>
-          <p>As Project Manager and Full-Stack Developer, Alya led the development of VocaLearn: building high-performance asynchronous REST APIs, implementing JWT authentication, integrating Bayesian Knowledge Tracing (BKT) competency assessment, and orchestrating OpenAI & Google Gemini AI for personalized recommendations.</p>
+          <p>As Project Manager and Full-Stack Developer, Alya managed project coordination while contributing to the FastAPI REST APIs, MySQL integration, JWT authentication, and Flutter mobile app. OpenAI and Google Gemini recommendations work with Bayesian Knowledge Tracing (BKT) to estimate each student's mastery of a topic.</p>
         </div>
       </div>
 
       <h4>💻 Technical Architecture & Implementation:</h4>
       <ul>
-        <li><strong>Backend Engine (FastAPI):</strong> Asynchronous REST APIs with relational MySQL database integration, Pydantic schema validation, and secure JWT-based authentication.</li>
-        <li><strong>AI & Competency Assessment:</strong> Combined Bayesian Knowledge Tracing (BKT) to dynamically infer student mastery level with Google Gemini & OpenAI API models to generate personalized modules and interactive quizzes.</li>
-        <li><strong>Mobile Application (Flutter):</strong> Responsive cross-platform mobile client featuring smooth module navigation, interactive quizzes, progress trackers, and real-time tutor interaction.</li>
-        <li><strong>Project Management:</strong> Coordinated sprint milestones, task allocation, code integration, and deployment deadlines across the engineering team.</li>
+        <li><strong>Backend APIs:</strong> Developed FastAPI-based REST APIs with MySQL integration and JWT authentication.</li>
+        <li><strong>AI & Competency Assessment:</strong> Integrated OpenAI and Google Gemini recommendations with Bayesian Knowledge Tracing (BKT) to estimate student mastery of a topic.</li>
+        <li><strong>Mobile Application:</strong> Developed the Flutter application for vocational students to access personalized learning modules, materials, quizzes, and tutor interactions.</li>
+        <li><strong>Project Coordination:</strong> Managed project coordination as Project Manager while contributing to full-stack development.</li>
       </ul>
 
       <div class="case-box" style="margin-top: 14px;">
         <h5>🏆 Recognition & Impact:</h5>
-        <p>Awarded <strong>2nd Winner in the Hackathon Challenge Category</strong> and <strong>Silver Medalist at KMIPN Awards 2026</strong> (Kompetisi Mahasiswa Informatika Politeknik Nasional).</p>
-        <p style="margin-top: 8px;"><a href="https://github.com/ariskiandrijusaldi/Vocalearn" target="_blank" rel="noopener noreferrer" style="color: var(--pink-deep); font-weight: 700; text-decoration: underline;">➔ View GitHub Repository (ariskiandrijusaldi/Vocalearn)</a></p>
+        <p>Awarded <strong>2nd Winner (Silver Medal), Hackathon Challenge Category</strong> at KMIPN (Kompetisi Mahasiswa Informatika Politeknik Nasional) 2026, National Level, September 2026. Team: <strong>Ajo Goes To Makassar</strong>.</p>
+        <p style="margin-top: 8px;"><a href="https://github.com/alyakhairunnisa1303/VocaLearn" target="_blank" rel="noopener noreferrer" style="color: var(--pink-deep); font-weight: 700; text-decoration: underline;">➔ View GitHub Repository (alyakhairunnisa1303/VocaLearn)</a></p>
+      </div>
+    `
+  },
+  'tani-cast': {
+    badge: '🌾 Top 10 • Food Security • PLAY IT! PLUS 2026',
+    title: 'TANI-CAST: AI Advisor for Synchronized Rice Planting and Pest Monitoring',
+    meta: 'Role: Technical Coordinator, team of 5 • PLAY IT! PLUS Hackathon Deeptech 2026 • Politeknik Negeri Malang',
+    content: `
+      <img src="assets/images/project_tanicast.png" class="modal-project-img" onclick="openLightbox(this.src, 'TANI-CAST: AI Advisor for Synchronized Rice Planting and Pest Monitoring')" alt="TANI-CAST rice planting and pest monitoring prototype">
+      <div class="project-case-grid">
+        <div class="case-box">
+          <h5>🎯 Challenge</h5>
+          <p>Rice farmer groups need coordinated planting schedules and actionable pest-monitoring priorities, taking local weather and practical resource constraints into account.</p>
+        </div>
+        <div class="case-box">
+          <h5>💡 Project Approach</h5>
+          <p>TANI-CAST is an AI advisor prototype for synchronized rice planting and pest monitoring. As Technical Coordinator for a team of five, Alya co-leads the prototype and designs its system architecture, backend, and chat simulator.</p>
+        </div>
+      </div>
+
+      <h4>💻 Technical Contributions:</h4>
+      <ul>
+        <li><strong>Dry-Spell Prediction:</strong> Building a machine-learning model to estimate dry-spell probability for each planting date and validating it against a rule-based baseline using Brier score and CRPS.</li>
+        <li><strong>Planting Schedule Optimization:</strong> Developing an optimizer under water, labor, equipment, and seed constraints.</li>
+        <li><strong>Farmer Report Structuring:</strong> Developing an LLM and retrieval-augmented generation (RAG) pipeline to structure free-text farmer reports.</li>
+      </ul>
+
+      <div class="case-box" style="margin-top: 14px;">
+        <h5>🏆 Recognition:</h5>
+        <p><strong>Top 10 Team, Food Security Category</strong> — PLAY IT! PLUS Hackathon Deeptech, National Level, Politeknik Negeri Malang, November 2026. Team: <strong>Gowes ka Malang wak nah</strong>.</p>
       </div>
     `
   },
@@ -668,25 +711,54 @@ function initProjectShowcase() {
    ========================================================================== */
 
 const articleDatabase = {
+  'ranahtalenta-award': {
+    badge: '🏆 1st Winner • National AI Hackathon',
+    title: '1st Winner, AI Hackathon 2026 — RanahTalenta',
+    meta: 'UKM Cybertech Politeknik Negeri Padang • National Level • November 2026',
+    content: `
+      <div class="modal-cert-preview-wrap">
+        <img src="assets/images/cert_aiHackaton.png" class="modal-cert-img" onclick="openLightbox(this.src, 'RanahTalenta — 1st Winner, AI Hackathon 2026')" alt="RanahTalenta AI Hackathon 2026 first-place certificate">
+        <div class="modal-cert-hint">🔍 Click certificate to enlarge</div>
+      </div>
+
+      <h4>Achievement</h4>
+      <p><strong>1st Winner, AI Hackathon 2026</strong> — UKM Cybertech Politeknik Negeri Padang, National Level, November 2026.</p>
+      <p><strong>Team:</strong> Singa di Laga<br><strong>Project:</strong> RanahTalenta AI-Powered Recruitment Screening System</p>
+
+      <h4>About RanahTalenta</h4>
+      <p>RanahTalenta helps HR teams screen CVs efficiently and transparently. Its hybrid semantic-scoring engine evaluates alignment between candidate competencies and job descriptions, then produces ranked candidates with explanations.</p>
+
+      <h4>Engineering Highlights</h4>
+      <ul>
+        <li>Used the Google Gemini API for semantic candidate-to-job matching.</li>
+        <li>Anonymized candidate names, gender, and age before evaluation to support fairer screening.</li>
+        <li>Connected CV parsing, scoring, and explainable ranking in an end-to-end AI pipeline.</li>
+        <li><strong>Stack:</strong> Next.js, TypeScript, Google Gemini API, MySQL, and Tailwind CSS.</li>
+      </ul>
+
+      <p style="margin-top: 14px;"><a href="https://github.com/alyakhairunnisa1303/RanahTalenta" target="_blank" rel="noopener noreferrer" style="color: var(--pink-deep); font-weight: 700; text-decoration: underline;">➔ View RanahTalenta on GitHub</a></p>
+    `
+  },
   'kmipn-award': {
     badge: '🏆 National Honors & Awards • KMIPN',
-    title: '2nd Winner Hackathon Challenge & Silver Medalist at KMIPN Awards 2026',
-    meta: 'Kompetisi Mahasiswa Informatika Politeknik Nasional • Padang & National Stage • 2026',
+    title: '2nd Winner (Silver Medal) — KMIPN 2026 Hackathon Challenge',
+    meta: 'Kompetisi Mahasiswa Informatika Politeknik Nasional • National Level • September 2026',
     content: `
       <div class="modal-cert-preview-wrap">
         <img src="assets/images/cert_kmipn.png" class="modal-cert-img" onclick="openLightbox(this.src, 'KMIPN 2026 — 2nd Winner Hackathon & Silver Medalist')" alt="KMIPN 2026 Certificate">
         <div class="modal-cert-hint">🔍 Click certificate to enlarge</div>
       </div>
 
-      <h4>About KMIPN & Achievement</h4>
-      <p>Kompetisi Mahasiswa Informatika Politeknik Nasional (KMIPN) is the premier national-level informatics championship among polytechnic institutions across Indonesia. Competing alongside top polytechnic developers nationwide, Alya Khairunnisa achieved dual honors:</p>
+      <h4>KMIPN Achievement</h4>
+      <p>At the national-level Kompetisi Mahasiswa Informatika Politeknik Nasional (KMIPN) 2026, Alya Khairunnisa and Team Ajo Goes To Makassar earned 2nd place (Silver Medal) in the Hackathon Challenge Category with VocaLearn.</p>
       
       <ul>
-        <li><strong>2nd Winner — Hackathon Challenge Category:</strong> Rapid prototype engineering, end-to-end full-stack implementation, and live product defense under intense time constraints.</li>
-        <li><strong>Silver Medal — KMIPN Awards 2026:</strong> Recognized for exceptional software engineering rigor, innovation in education technology, and impactful technical presentation.</li>
+        <li><strong>Award:</strong> 2nd Winner (Silver Medal), Hackathon Challenge Category.</li>
+        <li><strong>Date:</strong> September 2026.</li>
+        <li><strong>Project:</strong> VocaLearn Adaptive Learning Engine.</li>
       </ul>
 
-      <blockquote>"Engineering VocaLearn under competition pressure proved the power of clean architectural separation: a solid FastAPI asynchronous backend paired with a nimble Flutter mobile client."</blockquote>
+      <blockquote>"VocaLearn combines adaptive competency assessment with personalized learning recommendations for vocational students."</blockquote>
 
       <h4>Key Competencies Demonstrated:</h4>
       <ul>
@@ -694,6 +766,7 @@ const articleDatabase = {
         <li>Bayesian Knowledge Tracing (BKT) competency modeling for adaptive learning.</li>
         <li>Dual LLM orchestration (OpenAI and Google Gemini AI) for contextual student assistance.</li>
       </ul>
+      <p style="margin-top: 14px;"><strong>Team:</strong> Ajo Goes To Makassar.</p>
     `
   },
   'cert-huawei': {
